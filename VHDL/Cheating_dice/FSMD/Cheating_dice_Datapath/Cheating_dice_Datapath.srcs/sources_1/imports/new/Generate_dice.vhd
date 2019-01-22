@@ -31,14 +31,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Generate_dice is
+entity decoder is
     Generic( Base_time : integer);
     Port ( clk : in std_logic;
            Num : in integer range 1 to 6;
            Num_out : out STD_LOGIC_VECTOR (5 downto 0));
-end Generate_dice;
+end decoder;
 
-architecture Behavioral of Generate_dice is
+architecture Behavioral of decoder is
     type numflash is array (2 downto 0) of std_logic_vector(5 downto 0);
     type dice_array is array (5 downto 0) of numflash;
     constant dice:dice_array := (("011111","111000","110111"),--6
