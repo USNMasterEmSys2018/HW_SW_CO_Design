@@ -199,3 +199,57 @@ begin
 
 end FSM;
 
+architecture ASM of StateMachine is
+    signal Next_Result_control, Current_Result_control: integer range 1 to 6;
+    signal Next_Cheat_Result_control, Current_Cheat_Result_control: integer range 1 to 6;
+begin
+    sync_logic: process(clk)
+    begin
+        if rising_edge(clk) then
+            Current_Result_control <= Next_Result_control;
+            Current_Cheat_Result_control <= Next_Cheat_Result_control;
+        end if;
+    end process;
+    
+    next_state_logic: process(tick, Current_Result_control)
+    begin
+        Next_Result_control <= Current_Result_control;
+        if Tick = '1' then
+            if Current_Result_control < 6 then
+                Next_Result_control <= Current_Result_control + 1;
+            else
+                Next_Result_control <= 1;
+            end if;
+        end if;
+    end process;
+    
+    next_state_logic_cheat: process(tick, skip, Current_Cheat_Result_control)
+    begin
+        Next_Cheat_Result_control <= Current_Cheat_Result_control;
+        if skip /= 0 then
+            if tick = '1' then
+                if Current_Cheat_Result_control < 6 then
+                    Next_Cheat_Result_control <= Current_Cheat_Result_control + 1;
+                    if skip = Current_Cheat_Result_control + 1 then
+                        Next_Cheat_Result_control <= Current_Cheat_Result_control + 2;
+                        if Current_Cheat_Result_control = 5 then
+                            Next_Cheat_Result_control <= 1;
+                        end if;
+                    end if;
+                else
+                    Next_Cheat_Result_control <= 1;
+                    if skip = 1 then
+                        Next_Cheat_Result_control <= 2;
+                    end if;
+                end if;
+            end if;            
+        else
+            Next_Cheat_Result_control <= 1;
+        end if;
+    end process;
+    
+    FSM_out <= Current_Cheat_Result_control when Skip /= 0 and Stop = '1' 
+               else Current_Result_control;
+
+end ASM;
+
