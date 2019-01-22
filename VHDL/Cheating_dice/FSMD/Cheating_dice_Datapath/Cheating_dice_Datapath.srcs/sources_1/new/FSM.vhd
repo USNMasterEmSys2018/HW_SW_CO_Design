@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity FSM is
+entity StateMachine is
   Port (
         Skip: in integer range 0 to 6;
         Tick: in std_logic;
@@ -39,9 +39,9 @@ entity FSM is
         stop: in std_logic;
         FSM_OUT: out integer range 1 to 6
          );
-end FSM;
+end StateMachine;
 
-architecture Behavioral of FSM is
+architecture FSM of StateMachine is
     type State is (
                     State_1,
                     State_2,
@@ -197,4 +197,5 @@ begin
     FSM_out <= Out_reg_cheat when Skip /= 0 and Stop = '1' 
                else Out_reg;
 
-end Behavioral;
+end FSM;
+

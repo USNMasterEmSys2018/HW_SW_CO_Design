@@ -11,15 +11,22 @@ entity DataPath is
         FSM_out: in integer range 1 to 6;
         skip: out integer range 0 to 6;
         tick: out std_logic;
-        Data_out: out integer range 1 to 6
+        Num_out: out std_logic_vector(5 downto 0)
         );
 end DataPath;
 
 Architecture Behave of DataPath is
+    component decoder is
+    Generic( Base_time : integer);
+    Port ( clk : in std_logic;
+           Num : in integer range 1 to 6;
+           Num_out : out STD_LOGIC_VECTOR (5 downto 0));
+    end component;
     signal Cheats: integer range 0 to 7;
     signal Cheats_on: boolean;
     signal TickLimit: integer;
     signal TickCounter, Tickcounter_Next: integer := 0;
+    signal Data_out: integer range 1 to 6;
 begin
     --Preset flag Signal
     Cheats <= to_integer(signed(Cheat_set));
@@ -46,5 +53,8 @@ begin
     --Dataout_Control
     Data_out <= Cheats when Cheats_on and Cheat_Mode = "10" and stop = '1' --Fixed result
                 else FSM_out;
+                
+    Decode: decoder Generic map( Basetime )
+        Port map( clk, Data_out, Num_out);
 
 end Behave;

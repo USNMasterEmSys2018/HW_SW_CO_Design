@@ -42,15 +42,7 @@ entity Top is
 end Top;
 
 architecture Behavioral of Top is
-    component FSM is 
-        Port (
-            Skip: in integer range 0 to 6;
-            Tick: in std_logic;
-            clk: in std_logic;
-            stop: in std_logic;
-            FSM_OUT: out integer range 1 to 6
-             );
-    end Component;
+
     
     component DataPath is
     Generic (BaseTime: integer := 5400000); -- 40 ms
@@ -61,21 +53,15 @@ architecture Behavioral of Top is
         FSM_out: in integer range 1 to 6;
         skip: out integer range 0 to 6;
         tick: out std_logic;
-        Data_out: out integer range 1 to 6
+        Num_out: out std_logic_vector(5 downto 0)
         );
     end component;
     
-    component decoder is
-    Generic( Base_time : integer);
-    Port ( clk : in std_logic;
-           Num : in integer range 1 to 6;
-           Num_out : out STD_LOGIC_VECTOR (5 downto 0));
-    end component;
+
     
     Signal FSM_out: integer range 1 to 6;
     Signal skip: integer range 0 to 6;
     Signal tick: std_logic;
-    Signal Data_out: integer range 1 to 6;
     Signal num_out: STD_LOGIC_VECTOR (5 downto 0);
 begin
     Data_Path: DataPath generic map(BaseTime * 8)
@@ -87,19 +73,16 @@ begin
                                 FSM_out,
                                 skip,
                                 tick,
-                                Data_out
+                                num_out
                                 );
-    FSM_SEG: FSM Port map (
-                            Skip,
-                            Tick,
-                            clk,
-                            stop,
-                            FSM_OUT
+    FSM_SEG: entity work.StateMachine(FSM) Port map (
+                            Skip => Skip,
+                            Tick => tick,
+                            clk => clk,
+                            stop => stop,
+                            FSM_OUT => FSM_out
                              );
                              
-     Decode: decoder Generic map( Basetime )
-        Port map( clk, Data_out, Num_out);
-     
      num_out_H <= num_out;
      num_out_L <= num_out;
 
