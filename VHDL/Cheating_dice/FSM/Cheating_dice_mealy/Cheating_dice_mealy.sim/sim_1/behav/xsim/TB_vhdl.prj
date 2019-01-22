@@ -1,8 +1,0 @@
-# compile vhdl design source files
-vhdl xil_defaultlib  \
-"../../../../Cheating_dice_mealy.srcs/sources_1/new/Cheating_dice.vhd" \
-"../../../../Cheating_dice_mealy.srcs/sources_1/new/Generate_dice.vhd" \
-"../../../../Cheating_dice_mealy.srcs/sim_1/new/TB.vhd" \
-
-# Do not sort compile order
-nosort
