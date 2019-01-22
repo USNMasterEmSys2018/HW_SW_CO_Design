@@ -36,6 +36,7 @@ entity FSM is
         Skip: in integer range 0 to 6;
         Tick: in std_logic;
         clk: in std_logic;
+        stop: in std_logic;
         FSM_OUT: out integer range 1 to 6
          );
 end FSM;
@@ -49,71 +50,115 @@ architecture Behavioral of FSM is
                     State_5,
                     State_6
                     );
-    signal Next_state, current_state: state;
-    signal Out_reg: integer range 1 to 6;
+    signal Next_state, current_state: State := State_1;
+    signal Next_Cheat_state, current_Cheat_state: State := State_1;
+    --signal 
+    signal Out_reg, Out_reg_cheat: integer range 1 to 6;
 begin
     sync_logic: process(clk)
     begin
         if rising_edge(clk) then
             Current_state <= Next_state;
+            Current_Cheat_state <= Next_Cheat_state;
         end if;
     end process;
     
     next_state_logic: process(tick, current_state)
     begin
         Next_state <= Current_state;
-        case Current_state is
+        case current_state is
             when State_1 => 
                 if tick = '1' then
-                    if skip = 2 then 
-                        Next_state <= state_3;
-                    else
-                        Next_state <= state_2;
-                    end if;
+                    Next_state <= state_2;
                 end if;
             when State_2 => 
                 if tick = '1' then
-                    if skip = 3 then 
-                        Next_state <= state_4;
-                    else
-                        Next_state <= state_3;
-                    end if;
+                    Next_state <= state_3;
                 end if;
             when State_3 =>
                 if tick = '1' then
-                    if skip = 4 then 
-                        Next_state <= state_5;
-                    else
-                        Next_state <= state_4;
-                    end if;
+                    Next_state <= state_4;
                 end if; 
             when State_4 =>
                 if tick = '1' then
-                    if skip = 5 then 
-                        Next_state <= state_6;
-                    else
-                        Next_state <= state_5;
-                    end if;
+                    Next_state <= state_5;
                 end if; 
             when State_5 =>
                 if tick = '1' then
-                    if skip = 6 then 
-                        Next_state <= state_1;
-                    else
-                        Next_state <= state_6;
-                    end if;
+                    Next_state <= state_6;
                 end if;
             when State_6 =>
                 if tick = '1' then
-                    if skip = 1 then 
-                        Next_state <= state_2;
-                    else
-                        Next_state <= state_1;
-                    end if;
-                end if; 
+                    Next_state <= state_1;
+                end if;
             when others =>
                 Next_state <= state_1;
         end case;
+    end process;
+    
+    next_state_logic_cheat: process(tick, skip, current_Cheat_state)
+    begin
+        Next_Cheat_state <= current_Cheat_state;
+        if skip /= 0 then
+            case current_Cheat_state is
+                when State_1 => 
+                    if tick = '1' then
+                        if skip = 2 then 
+                            Next_Cheat_state <= state_3;
+                        else
+                            Next_Cheat_state <= state_2;
+                        end if;
+                    end if;
+                when State_2 => 
+                    if tick = '1' then
+                        if skip = 3 then 
+                            Next_Cheat_state <= state_4;
+                        else
+                            Next_Cheat_state <= state_3;
+                        end if;
+                    end if;
+                when State_3 =>
+                    if tick = '1' then
+                        if skip = 4 then 
+                            Next_Cheat_state <= state_5;
+                        else
+                            Next_Cheat_state <= state_4;
+                        end if;
+                    end if; 
+                when State_4 =>
+                    if tick = '1' then
+                        if skip = 5 then 
+                            Next_Cheat_state <= state_6;
+                        else
+                            Next_Cheat_state <= state_5;
+                        end if;
+                    end if; 
+                when State_5 =>
+                    if tick = '1' then
+                        if skip = 6 then 
+                            Next_Cheat_state <= state_1;
+                        else
+                            Next_Cheat_state <= state_6;
+                        end if;
+                    end if;
+                when State_6 =>
+                    if tick = '1' then
+                        if skip = 1 then 
+                            Next_Cheat_state <= state_2;
+                        else
+                            Next_Cheat_state <= state_1;
+                        end if;
+                    end if; 
+                when others =>
+                    if skip = 1 then 
+                        Next_Cheat_state <= state_2;
+                    else
+                        Next_Cheat_state <= state_1;
+                    end if;
+            end case;
+        else
+            Next_Cheat_state <= state_1;
+        end if;
     end process;
     
     OutPut_logic:process(current_state)
@@ -132,6 +177,24 @@ begin
             when State_6 =>
                 Out_reg <= 6;
         end case;
+        
+        case current_Cheat_state is
+            when State_1 => 
+                Out_reg_cheat <= 1;
+            when State_2 => 
+                Out_reg_cheat <= 2;
+            when State_3 =>
+                Out_reg_cheat <= 3;
+            when State_4 =>
+                Out_reg_cheat <= 4;
+            when State_5 =>
+                Out_reg_cheat <= 5;
+            when State_6 =>
+                Out_reg_cheat <= 6;
+        end case;
     end process;
+    
+    FSM_out <= Out_reg_cheat when Skip /= 0 and Stop = '1' 
+               else Out_reg;
 
 end Behavioral;
