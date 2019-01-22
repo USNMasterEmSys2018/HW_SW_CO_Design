@@ -1,6 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.srcs/sources_1/new/Cheating_dice.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Cheating_dice
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.srcs/sources_1/new/Generate_dice.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity Generate_dice
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.srcs/sim_1/new/TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity TB
