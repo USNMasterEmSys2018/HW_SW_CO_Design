@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 10:50:12 2019
+# Process ID: 8496
+# Current directory: D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/Cheating_dice_mealy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7580 D:\USN_Study\HW_SW_CO_Design\VHDL\Cheating_dice\FSM\Cheating_dice_mealy\Cheating_dice_mealy.xpr
+# Log file: D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/Cheating_dice_mealy/vivado.log
+# Journal file: D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/Cheating_dice_mealy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/Cheating_dice_mealy/Cheating_dice_mealy.xpr
+update_compile_order -fileset sources_1
+save_project_as project_1 D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1 -force
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/impl_1/Cheating_dice.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+launch_simulation
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/impl_1/Cheating_dice.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+create_run synth_2 -flow {Vivado Synthesis 2018} -strategy {Vivado Synthesis Defaults} -report_strategy {Vivado Synthesis Default Reports}
+current_run [get_runs synth_2]
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+reset_run synth_2
+export_ip_user_files -of_objects  [get_files D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.srcs/constrs_1/new/Constraint.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.srcs/constrs_1/new/Constraint.xdc
+add_files -fileset constrs_1 -norecurse D:/USN_Study/Private/VHDL/Cheating_dice/Basys3.xdc
+import_files -fileset constrs_1 D:/USN_Study/Private/VHDL/Cheating_dice/Basys3.xdc
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/impl_2/Cheating_dice.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/impl_2/Cheating_dice.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_2
+launch_runs impl_2 -jobs 4
+wait_on_run impl_2
+reset_run synth_2
+launch_runs impl_2 -to_step write_bitstream -jobs 4
+wait_on_run impl_2
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/impl_2/Cheating_dice.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
