@@ -1,0 +1,7 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto c0116242b43a438f9837d3ce706b9fed --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_behav xil_defaultlib.TB -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-718] formal port <num_out> does not exist in entity <Cheating_dice>.  Please compare the definition of block <Cheating_dice> to its component declaration and its instantion to detect the mismatch. [D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.srcs/sim_1/new/TB.vhd:45]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb in library work failed.

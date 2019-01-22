@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 17 11:46:04 2019
+# Process ID: 8384
+# Current directory: D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/synth_2
+# Command line: vivado.exe -log Cheating_dice.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Cheating_dice.tcl
+# Log file: D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/synth_2/Cheating_dice.vds
+# Journal file: D:/USN_Study/HW_SW_CO_Design/VHDL/Cheating_dice/FSM/project_1/project_1.runs/synth_2\vivado.jou
+#-----------------------------------------------------------
+source Cheating_dice.tcl -notrace
