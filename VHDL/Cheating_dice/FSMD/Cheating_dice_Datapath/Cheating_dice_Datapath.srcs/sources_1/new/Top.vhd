@@ -75,7 +75,7 @@ begin
                                 tick,
                                 num_out
                                 );
-    FSM_SEG: entity work.StateMachine(FSM) Port map (
+    Control_Path: entity work.StateMachine(FSM) Port map (
                             Skip => Skip,
                             Tick => tick,
                             clk => clk,
