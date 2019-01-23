@@ -64,7 +64,7 @@ architecture Behavioral of Top is
     Signal tick: std_logic;
     Signal num_out: STD_LOGIC_VECTOR (5 downto 0);
 begin
-    Data_Path: DataPath generic map(BaseTime * 8)
+    Data_Path: DataPath generic map(BaseTime)
                         Port map(
                                 Cheat_mode,
                                 Cheat_set,
@@ -75,7 +75,7 @@ begin
                                 tick,
                                 num_out
                                 );
-    Control_Path: entity work.StateMachine(FSM) Port map (
+    Control_Path: entity work.StateMachine(ASM) Port map (
                             Skip => Skip,
                             Tick => tick,
                             clk => clk,

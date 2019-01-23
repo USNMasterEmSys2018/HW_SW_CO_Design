@@ -200,6 +200,11 @@ begin
 end FSM;
 
 architecture ASM of StateMachine is
+        type State is (
+                    State_0,
+                    State_1
+                    );
+    signal Next_state, current_state: State := State_0;
     signal Next_Result_control, Current_Result_control: integer range 1 to 6;
     signal Next_Cheat_Result_control, Current_Cheat_Result_control: integer range 1 to 6;
 begin
@@ -208,43 +213,56 @@ begin
         if rising_edge(clk) then
             Current_Result_control <= Next_Result_control;
             Current_Cheat_Result_control <= Next_Cheat_Result_control;
+            current_state <= Next_state;
         end if;
     end process;
     
-    next_state_logic: process(tick, Current_Result_control)
+    next_state_logic: process(tick, Current_Result_control, current_state)
     begin
-        Next_Result_control <= Current_Result_control;
-        if Tick = '1' then
-            if Current_Result_control < 6 then
-                Next_Result_control <= Current_Result_control + 1;
-            else
+        Next_state <= current_state;
+        case current_state is 
+            when state_0 =>
                 Next_Result_control <= 1;
-            end if;
-        end if;
-    end process;
-    
-    next_state_logic_cheat: process(tick, skip, Current_Cheat_Result_control)
-    begin
-        Next_Cheat_Result_control <= Current_Cheat_Result_control;
-        if skip /= 0 then
-            if tick = '1' then
-                if Current_Cheat_Result_control < 6 then
-                    Next_Cheat_Result_control <= Current_Cheat_Result_control + 1;
-                    if skip = Current_Cheat_Result_control + 1 then
-                        Next_Cheat_Result_control <= Current_Cheat_Result_control + 2;
-                        if Current_Cheat_Result_control = 5 then
-                            Next_Cheat_Result_control <= 1;
-                        end if;
-                    end if;
-                else
-                    Next_Cheat_Result_control <= 1;
-                    if skip = 1 then
-                        Next_Cheat_Result_control <= 2;
+                Next_state <= state_1;
+            when state_1 =>
+                Next_Result_control <= Current_Result_control;
+                if Tick = '1' then
+                    if Current_Result_control < 6 then
+                        Next_Result_control <= Current_Result_control + 1;
+                    else
+                        Next_Result_control <= 1;
                     end if;
                 end if;
-            end if;            
-        else
-            Next_Cheat_Result_control <= 1;
+            when others =>
+                Next_state <= state_0;
+        end case;
+    end process;
+    
+    next_state_logic_cheat: process(tick, skip, Current_Cheat_Result_control, current_state)
+    begin
+        Next_Cheat_Result_control <= 1;
+        if current_state = state_1 then
+            Next_Cheat_Result_control <= Current_Cheat_Result_control;
+            if skip /= 0 then
+                if tick = '1' then
+                    if Current_Cheat_Result_control < 6 then
+                        Next_Cheat_Result_control <= Current_Cheat_Result_control + 1;
+                        if skip = Current_Cheat_Result_control + 1 then
+                            Next_Cheat_Result_control <= Current_Cheat_Result_control + 2;
+                            if Current_Cheat_Result_control = 5 then
+                                Next_Cheat_Result_control <= 1;
+                            end if;
+                        end if;
+                    else
+                        Next_Cheat_Result_control <= 1;
+                        if skip = 1 then
+                            Next_Cheat_Result_control <= 2;
+                        end if;
+                    end if;
+                end if;            
+            else
+                Next_Cheat_Result_control <= 1;
+            end if;
         end if;
     end process;
     

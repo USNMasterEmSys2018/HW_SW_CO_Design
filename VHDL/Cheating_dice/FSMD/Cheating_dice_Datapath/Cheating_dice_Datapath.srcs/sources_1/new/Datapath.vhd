@@ -3,7 +3,7 @@ use IEEE.std_logic_1164.all;
 use IEEE.NUMERIC_STD.ALL;
 
 entity DataPath is
-    Generic (BaseTime: integer := 5400000); -- 40 ms
+    Generic (BaseTime: integer := 675000); -- 40 ms
     Port(
         Cheat_mode: in std_logic_vector(1 downto 0);
         Cheat_set: in std_logic_vector(2 downto 0);
@@ -31,8 +31,8 @@ begin
     --Preset flag Signal
     Cheats <= to_integer(signed(Cheat_set));
     Cheats_on <= Cheat_mode /= "00" and Cheats < 7 and Cheats > 0;
-    TickLimit <= BaseTime * 3 when FSM_out = Cheats and Cheat_Mode = "11" --Tripple Chance
-                 else BaseTime;
+    TickLimit <= BaseTime * 3 * 8 when FSM_out = Cheats and Cheat_Mode = "11" --Tripple Chance
+                 else BaseTime * 8;
                  
     --Generate signal for FSM
     FSM_signaling:process(clk)
