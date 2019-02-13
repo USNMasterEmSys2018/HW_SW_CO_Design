@@ -126,7 +126,7 @@ begin
                     if Cheat_Enabled then
                         next_state <= state_Cheat_2;
                     else
-                        next_state <= state_1;
+                        next_state <= state_1; --I have a new wrong function
                     end if;
                 end if;
                 
