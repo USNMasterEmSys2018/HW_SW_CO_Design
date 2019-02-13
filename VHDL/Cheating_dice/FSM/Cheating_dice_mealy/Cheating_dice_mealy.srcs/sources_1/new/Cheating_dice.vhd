@@ -89,7 +89,7 @@ begin
         case current_state is 
             when state_1 =>
                 if time_counter = mmswitch then
-                    next_state <= state_2; --I have a new wrong functionality.
+                    next_state <= state_2;
                 end if;
                 
             when state_2 =>
