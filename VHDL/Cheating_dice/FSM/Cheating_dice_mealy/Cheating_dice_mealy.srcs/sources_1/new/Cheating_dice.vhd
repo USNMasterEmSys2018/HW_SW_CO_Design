@@ -94,7 +94,7 @@ begin
                 
             when state_2 =>
                 if time_counter = mmswitch then
-                    next_state <= state_3;
+                    next_state <= state_3; ---The wrong function
                 end if;
                 
             when state_3 =>
