@@ -32,7 +32,7 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity Cheating_dice is
-    generic (Base_time : integer := 675000); -- 5 mm
+    generic (Base_time : integer := 675000); -- 5 mm --New changes
     Port ( clk : in STD_LOGIC;
            btn : in STD_LOGIC;
            cheat_en : in STD_LOGIC;
