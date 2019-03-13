@@ -1,0 +1,21 @@
+21:50:50 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92112	   1436	   3188	  96736	  179e0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+
+21:50:50 Build Finished (took 383ms)
+
