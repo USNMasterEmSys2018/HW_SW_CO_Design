@@ -49,7 +49,6 @@
 #include "platform.h"
 #include "xil_printf.h"
 
-
 int main()
 {
     init_platform();

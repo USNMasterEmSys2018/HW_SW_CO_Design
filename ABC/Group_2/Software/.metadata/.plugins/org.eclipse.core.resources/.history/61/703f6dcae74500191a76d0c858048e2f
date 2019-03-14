@@ -1,0 +1,23 @@
+/*
+ * Buzzer.h
+ *
+ *  Created on: Mar 13, 2019
+ *      Author: Bozhao Liu
+ */
+
+#ifndef SRC_BUZZER_H_
+#define SRC_BUZZER_H_
+
+#include "PmodACL2.h"
+#include "xparameters.h"
+
+class Buzzer {
+private:
+	XGpio Buzz;
+public:
+	Buzzer();
+	void Sing(int Freq);
+	virtual ~Buzzer();
+};
+
+#endif /* SRC_BUZZER_H_ */

@@ -1,0 +1,21 @@
+/*
+ * LEDs.h
+ *
+ *  Created on: Mar 13, 2019
+ *      Author: Bozhao Liu
+ */
+#include "xgpio.h"
+#include "xparameters.h"
+
+#ifndef SRC_LEDS_H_
+#define SRC_LEDS_H_
+
+class LEDs {
+private:
+	XGpio LED;
+public:
+	LEDs();
+	virtual ~LEDs();
+};
+
+#endif /* SRC_LEDS_H_ */
