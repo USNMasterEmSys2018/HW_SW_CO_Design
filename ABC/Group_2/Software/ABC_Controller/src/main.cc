@@ -5,7 +5,7 @@
 #include "platform.h"
 #include "xil_printf.h"
 #include "LEDs.h"
-#include "Buzzer.h"
+//#include "Buzzer.h"
 
 int main()
 {
@@ -15,8 +15,8 @@ int main()
     LEDs LED;
     LED.LightUp(note);
     printf("%d",(int)note);
-    Buzzer buz;
-    buz.Sing(440);
+    //Buzzer buz;
+    //buz.Sing(440);
     cleanup_platform();
     return 0;
 }

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Wed Mar 13 20:51:26 2019
+| Date             : Thu Mar 14 09:49:33 2019
 | Host             : 9900K_1080ti running 64-bit major release  (build 9200)
 | Command          : report_power -file ABC_wrapper_power_routed.rpt -pb ABC_wrapper_power_summary_routed.pb -rpx ABC_wrapper_power_routed.rpx
 | Design           : ABC_wrapper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.228        |
+| Total On-Chip Power (W)  | 0.224        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.155        |
+| Dynamic (W)              | 0.151        |
 | Device Static (W)        | 0.074        |
 | Effective TJA (C/W)      | 5.0          |
 | Max Ambient (C)          | 83.9         |
@@ -52,21 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.013 |        7 |       --- |             --- |
-| Slice Logic              |     0.004 |     5548 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     1886 |     20800 |            9.07 |
-|   LUT as Distributed RAM |    <0.001 |       80 |      9600 |            0.83 |
-|   Register               |    <0.001 |     2244 |     41600 |            5.39 |
+| Clocks                   |     0.011 |        7 |       --- |             --- |
+| Slice Logic              |     0.003 |     4335 |       --- |             --- |
+|   LUT as Logic           |     0.002 |     1506 |     20800 |            7.24 |
+|   LUT as Distributed RAM |    <0.001 |       64 |      9600 |            0.67 |
+|   Register               |    <0.001 |     1644 |     41600 |            3.95 |
 |   CARRY4                 |    <0.001 |       38 |      8150 |            0.47 |
 |   F7/F8 Muxes            |    <0.001 |      111 |     32600 |            0.34 |
 |   LUT as Shift Register  |    <0.001 |       74 |      9600 |            0.77 |
-|   Others                 |    <0.001 |      642 |       --- |             --- |
-| Signals                  |     0.008 |     3766 |       --- |             --- |
-| Block RAM                |     0.007 |       32 |        50 |           64.00 |
+|   Others                 |    <0.001 |      528 |       --- |             --- |
+| Signals                  |     0.007 |     3030 |       --- |             --- |
+| Block RAM                |     0.008 |       32 |        50 |           64.00 |
 | MMCM                     |     0.106 |        1 |         5 |           20.00 |
 | I/O                      |     0.016 |       28 |       106 |           26.42 |
 | Static Power             |     0.074 |          |           |                 |
-| Total                    |     0.228 |          |           |                 |
+| Total                    |     0.224 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.044 |       0.033 |      0.011 |
+| Vccint    |       1.000 |     0.040 |       0.029 |      0.011 |
 | Vccaux    |       1.800 |     0.072 |       0.059 |      0.013 |
 | Vcco33    |       3.300 |     0.005 |       0.004 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -149,16 +149,14 @@ Table of Contents
 +-------------------------------+-----------+
 | Name                          | Power (W) |
 +-------------------------------+-----------+
-| ABC_wrapper                   |     0.155 |
-|   ABC_i                       |     0.139 |
-|     PmodACL2_0                |     0.006 |
-|       inst                    |     0.006 |
+| ABC_wrapper                   |     0.151 |
+|   ABC_i                       |     0.135 |
 |     axi_gpio_0                |     0.001 |
 |       U0                      |     0.001 |
 |     clk_wiz_1                 |     0.106 |
 |       inst                    |     0.106 |
-|     microblaze_0              |     0.015 |
-|       U0                      |     0.015 |
+|     microblaze_0              |     0.016 |
+|       U0                      |     0.016 |
 |     microblaze_0_axi_periph   |     0.001 |
 |       xbar                    |     0.001 |
 |     microblaze_0_local_memory |     0.008 |

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group 2/Software/Software.runs/ABC_xbar_0_synth_1'
+HD_PWD='D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/ABC_xbar_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

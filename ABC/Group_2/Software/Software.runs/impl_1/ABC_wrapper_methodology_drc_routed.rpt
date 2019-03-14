@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Mar 13 20:51:24 2019
+| Date         : Thu Mar 14 09:49:32 2019
 | Host         : 9900K_1080ti running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ABC_wrapper_methodology_drc_routed.rpt -pb ABC_wrapper_methodology_drc_routed.pb -rpx ABC_wrapper_methodology_drc_routed.rpx
 | Design       : ABC_wrapper
@@ -23,26 +23,20 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 30
-+-----------+----------+-------------------------------------------------+------------+
-| Rule      | Severity | Description                                     | Violations |
-+-----------+----------+-------------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert                    | 1          |
-| PDRC-190  | Warning  | Suboptimally placed synchronized register chain | 1          |
-| TIMING-9  | Warning  | Unknown CDC Logic                               | 1          |
-| TIMING-18 | Warning  | Missing input or output delay                   | 27         |
-+-----------+----------+-------------------------------------------------+------------+
+             Violations found: 29
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| LUTAR-1   | Warning  | LUT drives async reset alert  | 1          |
+| TIMING-9  | Warning  | Unknown CDC Logic             | 1          |
+| TIMING-18 | Warning  | Missing input or output delay | 27         |
++-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
 LUTAR-1#1 Warning
 LUT drives async reset alert  
 LUT cell ABC_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_i_2, with 2 or more inputs, drives asynchronous preset/clear pin(s) ABC_i/mdm_1/U0/MDM_Core_I1/JTAG_CONTROL_I/sel_n_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
-PDRC-190#1 Warning
-Suboptimally placed synchronized register chain  
-The FDRE cell ABC_i/PmodACL2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to in site SLICE_X0Y38 is part of a synchronized register chain that is suboptimally placed as the load FDRE cell ABC_i/PmodACL2_0/inst/axi_quad_spi_0/U0/NO_DUAL_QUAD_MODE.QSPI_NORMAL/QSPI_LEGACY_MD_GEN.QSPI_CORE_INTERFACE_I/FIFO_EXISTS.CLK_CROSS_I/LOGIC_GENERATION_CDC.RX_FIFO_RST_AX2S_1_CDC_1 is not placed in the same (SLICE) site.
 Related violations: <none>
 
 TIMING-9#1 Warning

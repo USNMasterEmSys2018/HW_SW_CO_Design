@@ -7,14 +7,14 @@
 
 #include <stdio.h>
 #include "Buzzer.h"
-#include "PmodACL2.h"
+#include "PmodGPIO.h"
 #include "xparameters.h"
 #include <unistd.h>
 
 Buzzer::Buzzer() {
 	// TODO Auto-generated constructor stub
 	//PmodACL2 Buzz;
-	ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+	GPIO_begin( &Buzz, XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR, 0);
 
 }
 
@@ -33,6 +33,5 @@ void Buzzer::Sing(int Freq)
 
 Buzzer::~Buzzer() {
 	// TODO Auto-generated destructor stub
-	ACL2_end( &Buzz);
 }
 

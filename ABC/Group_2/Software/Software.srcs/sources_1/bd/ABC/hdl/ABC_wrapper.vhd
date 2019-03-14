@@ -1,7 +1,7 @@
 --Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
---Date        : Wed Mar 13 19:27:53 2019
+--Date        : Thu Mar 14 09:47:18 2019
 --Host        : 9900K_1080ti running 64-bit major release  (build 9200)
 --Command     : generate_target ABC_wrapper.bd
 --Design      : ABC_wrapper
@@ -34,11 +34,11 @@ architecture STRUCTURE of ABC_wrapper is
   port (
     reset : in STD_LOGIC;
     sys_clock : in STD_LOGIC;
-    usb_uart_rxd : in STD_LOGIC;
-    usb_uart_txd : out STD_LOGIC;
     led_16bits_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     led_16bits_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
     led_16bits_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    usb_uart_rxd : in STD_LOGIC;
+    usb_uart_txd : out STD_LOGIC;
     jb_pin1_o : out STD_LOGIC;
     jb_pin7_i : in STD_LOGIC;
     jb_pin2_o : out STD_LOGIC;

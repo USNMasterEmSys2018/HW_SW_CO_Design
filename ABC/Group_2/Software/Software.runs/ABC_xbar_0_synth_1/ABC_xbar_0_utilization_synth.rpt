@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Mar 13 18:20:07 2019
+| Date         : Thu Mar 14 09:47:58 2019
 | Host         : 9900K_1080ti running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ABC_xbar_0_utilization_synth.rpt -pb ABC_xbar_0_utilization_synth.pb
 | Design       : ABC_xbar_0
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  186 |     0 |     20800 |  0.89 |
-|   LUT as Logic          |  186 |     0 |     20800 |  0.89 |
+| Slice LUTs*             |  182 |     0 |     20800 |  0.88 |
+|   LUT as Logic          |  182 |     0 |     20800 |  0.88 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         |  133 |     0 |     41600 |  0.32 |
-|   Register as Flip Flop |  133 |     0 |     41600 |  0.32 |
+| Slice Registers         |  132 |     0 |     41600 |  0.32 |
+|   Register as Flip Flop |  132 |     0 |     41600 |  0.32 |
 |   Register as Latch     |    0 |     0 |     41600 |  0.00 |
 | F7 Muxes                |    0 |     0 |     16300 |  0.00 |
 | F8 Muxes                |    0 |     0 |      8150 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 133   |          Yes |       Reset |            - |
+| 132   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -149,12 +149,12 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  133 |        Flop & Latch |
-| LUT6     |   80 |                 LUT |
-| LUT4     |   54 |                 LUT |
-| LUT5     |   44 |                 LUT |
-| LUT2     |   14 |                 LUT |
-| LUT3     |   12 |                 LUT |
+| FDRE     |  132 |        Flop & Latch |
+| LUT6     |   81 |                 LUT |
+| LUT4     |   52 |                 LUT |
+| LUT5     |   39 |                 LUT |
+| LUT3     |   14 |                 LUT |
+| LUT2     |   13 |                 LUT |
 | LUT1     |    2 |                 LUT |
 +----------+------+---------------------+
 

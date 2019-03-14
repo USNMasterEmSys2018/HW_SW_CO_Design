@@ -22,7 +22,6 @@
       "rst_clk_wiz_1_100M": "",
       "axi_uartlite_0": "",
       "axi_gpio_0": "",
-      "PmodACL2_0": "",
       "microblaze_0_axi_periph": {
         "xbar": "",
         "s00_couplers": {},
@@ -30,13 +29,10 @@
         "m01_couplers": {},
         "m02_couplers": {},
         "m03_couplers": {}
-      }
+      },
+      "PmodGPIO_0": ""
     },
     "interface_ports": {
-      "jb": {
-        "mode": "Master",
-        "vlnv": "digilentinc.com:interface:pmod_rtl:1.0"
-      },
       "usb_uart": {
         "mode": "Master",
         "vlnv": "xilinx.com:interface:uart_rtl:1.0"
@@ -44,6 +40,10 @@
       "led_16bits": {
         "mode": "Master",
         "vlnv": "xilinx.com:interface:gpio_rtl:1.0"
+      },
+      "jb": {
+        "mode": "Master",
+        "vlnv": "digilentinc.com:interface:pmod_rtl:1.0"
       }
     },
     "ports": {
@@ -182,28 +182,16 @@
           }
         },
         "interface_nets": {
-          "microblaze_0_dlmb_cntlr": {
-            "interface_ports": [
-              "dlmb_bram_if_cntlr/BRAM_PORT",
-              "lmb_bram/BRAM_PORTA"
-            ]
-          },
           "microblaze_0_ilmb": {
             "interface_ports": [
               "ILMB",
               "ilmb_v10/LMB_M"
             ]
           },
-          "microblaze_0_ilmb_bus": {
+          "microblaze_0_dlmb_cntlr": {
             "interface_ports": [
-              "ilmb_v10/LMB_Sl_0",
-              "ilmb_bram_if_cntlr/SLMB"
-            ]
-          },
-          "microblaze_0_dlmb_bus": {
-            "interface_ports": [
-              "dlmb_v10/LMB_Sl_0",
-              "dlmb_bram_if_cntlr/SLMB"
+              "dlmb_bram_if_cntlr/BRAM_PORT",
+              "lmb_bram/BRAM_PORTA"
             ]
           },
           "microblaze_0_ilmb_cntlr": {
@@ -212,10 +200,22 @@
               "lmb_bram/BRAM_PORTB"
             ]
           },
+          "microblaze_0_ilmb_bus": {
+            "interface_ports": [
+              "ilmb_v10/LMB_Sl_0",
+              "ilmb_bram_if_cntlr/SLMB"
+            ]
+          },
           "microblaze_0_dlmb": {
             "interface_ports": [
               "DLMB",
               "dlmb_v10/LMB_M"
+            ]
+          },
+          "microblaze_0_dlmb_bus": {
+            "interface_ports": [
+              "dlmb_v10/LMB_Sl_0",
+              "dlmb_bram_if_cntlr/SLMB"
             ]
           }
         },
@@ -295,18 +295,6 @@
         "parameters": {
           "GPIO_BOARD_INTERFACE": {
             "value": "led_16bits"
-          },
-          "USE_BOARD_FLOW": {
-            "value": "true"
-          }
-        }
-      },
-      "PmodACL2_0": {
-        "vlnv": "digilentinc.com:IP:PmodACL2:1.0",
-        "xci_name": "ABC_PmodACL2_0_0",
-        "parameters": {
-          "PMOD": {
-            "value": "jb"
           },
           "USE_BOARD_FLOW": {
             "value": "true"
@@ -744,6 +732,18 @@
               "m00_couplers/M_AXI"
             ]
           },
+          "xbar_to_m00_couplers": {
+            "interface_ports": [
+              "xbar/M00_AXI",
+              "m00_couplers/S_AXI"
+            ]
+          },
+          "m01_couplers_to_microblaze_0_axi_periph": {
+            "interface_ports": [
+              "M01_AXI",
+              "m01_couplers/M_AXI"
+            ]
+          },
           "xbar_to_m01_couplers": {
             "interface_ports": [
               "xbar/M01_AXI",
@@ -756,28 +756,16 @@
               "m02_couplers/M_AXI"
             ]
           },
-          "m01_couplers_to_microblaze_0_axi_periph": {
+          "xbar_to_m02_couplers": {
             "interface_ports": [
-              "M01_AXI",
-              "m01_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m00_couplers": {
-            "interface_ports": [
-              "xbar/M00_AXI",
-              "m00_couplers/S_AXI"
+              "xbar/M02_AXI",
+              "m02_couplers/S_AXI"
             ]
           },
           "m03_couplers_to_microblaze_0_axi_periph": {
             "interface_ports": [
               "M03_AXI",
               "m03_couplers/M_AXI"
-            ]
-          },
-          "xbar_to_m02_couplers": {
-            "interface_ports": [
-              "xbar/M02_AXI",
-              "m02_couplers/S_AXI"
             ]
           },
           "xbar_to_m03_couplers": {
@@ -821,25 +809,25 @@
             ]
           }
         }
+      },
+      "PmodGPIO_0": {
+        "vlnv": "digilentinc.com:IP:PmodGPIO:1.0",
+        "xci_name": "ABC_PmodGPIO_0_0",
+        "parameters": {
+          "PMOD": {
+            "value": "jb"
+          },
+          "USE_BOARD_FLOW": {
+            "value": "true"
+          }
+        }
       }
     },
     "interface_nets": {
-      "microblaze_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M00_AXI",
-          "axi_uartlite_0/S_AXI"
-        ]
-      },
       "axi_gpio_0_GPIO": {
         "interface_ports": [
           "led_16bits",
           "axi_gpio_0/GPIO"
-        ]
-      },
-      "microblaze_0_axi_periph_M02_AXI": {
-        "interface_ports": [
-          "microblaze_0_axi_periph/M02_AXI",
-          "PmodACL2_0/AXI_LITE_GPIO"
         ]
       },
       "microblaze_0_debug": {
@@ -848,16 +836,10 @@
           "microblaze_0/DEBUG"
         ]
       },
-      "PmodACL2_0_Pmod_out": {
+      "microblaze_0_axi_periph_M00_AXI": {
         "interface_ports": [
-          "jb",
-          "PmodACL2_0/Pmod_out"
-        ]
-      },
-      "microblaze_0_dlmb_1": {
-        "interface_ports": [
-          "microblaze_0/DLMB",
-          "microblaze_0_local_memory/DLMB"
+          "microblaze_0_axi_periph/M00_AXI",
+          "axi_uartlite_0/S_AXI"
         ]
       },
       "microblaze_0_ilmb_1": {
@@ -866,16 +848,22 @@
           "microblaze_0_local_memory/ILMB"
         ]
       },
+      "axi_uartlite_0_UART": {
+        "interface_ports": [
+          "usb_uart",
+          "axi_uartlite_0/UART"
+        ]
+      },
       "microblaze_0_M_AXI_DP": {
         "interface_ports": [
           "microblaze_0/M_AXI_DP",
           "microblaze_0_axi_periph/S00_AXI"
         ]
       },
-      "axi_uartlite_0_UART": {
+      "microblaze_0_dlmb_1": {
         "interface_ports": [
-          "usb_uart",
-          "axi_uartlite_0/UART"
+          "microblaze_0/DLMB",
+          "microblaze_0_local_memory/DLMB"
         ]
       },
       "microblaze_0_axi_periph_M01_AXI": {
@@ -884,10 +872,16 @@
           "axi_gpio_0/S_AXI"
         ]
       },
-      "microblaze_0_axi_periph_M03_AXI": {
+      "PmodGPIO_0_Pmod_out": {
         "interface_ports": [
-          "microblaze_0_axi_periph/M03_AXI",
-          "PmodACL2_0/AXI_LITE_SPI"
+          "jb",
+          "PmodGPIO_0/Pmod_out"
+        ]
+      },
+      "microblaze_0_axi_periph_M02_AXI": {
+        "interface_ports": [
+          "microblaze_0_axi_periph/M02_AXI",
+          "PmodGPIO_0/AXI_LITE_GPIO"
         ]
       }
     },
@@ -904,10 +898,9 @@
           "microblaze_0_axi_periph/ACLK",
           "axi_gpio_0/s_axi_aclk",
           "microblaze_0_axi_periph/M01_ACLK",
-          "PmodACL2_0/s_axi_aclk",
           "microblaze_0_axi_periph/M02_ACLK",
           "microblaze_0_axi_periph/M03_ACLK",
-          "PmodACL2_0/ext_spi_clk"
+          "PmodGPIO_0/s_axi_aclk"
         ]
       },
       "clk_wiz_1_locked": {
@@ -950,9 +943,9 @@
           "microblaze_0_axi_periph/ARESETN",
           "axi_gpio_0/s_axi_aresetn",
           "microblaze_0_axi_periph/M01_ARESETN",
-          "PmodACL2_0/s_axi_aresetn",
           "microblaze_0_axi_periph/M02_ARESETN",
-          "microblaze_0_axi_periph/M03_ARESETN"
+          "microblaze_0_axi_periph/M03_ARESETN",
+          "PmodGPIO_0/s_axi_aresetn"
         ]
       },
       "sys_clock_1": {
@@ -969,15 +962,10 @@
             "range": "4G",
             "width": "32",
             "segments": {
-              "SEG_PmodACL2_0_Reg0": {
-                "address_block": "/PmodACL2_0/AXI_LITE_GPIO/Reg0",
+              "SEG_PmodGPIO_0_Reg0": {
+                "address_block": "/PmodGPIO_0/AXI_LITE_GPIO/Reg0",
                 "offset": "0x00020000",
                 "range": "4K"
-              },
-              "SEG_PmodACL2_0_Reg01": {
-                "address_block": "/PmodACL2_0/AXI_LITE_SPI/Reg0",
-                "offset": "0x00030000",
-                "range": "64K"
               },
               "SEG_axi_gpio_0_Reg": {
                 "address_block": "/axi_gpio_0/S_AXI/Reg",

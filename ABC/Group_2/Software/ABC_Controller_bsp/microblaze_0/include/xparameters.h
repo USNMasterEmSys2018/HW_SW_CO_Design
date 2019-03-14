@@ -474,15 +474,13 @@
  
  
 /******************************************************************/
-/* Definitions for driver PMODACL2 */
-#define XPAR_PMODACL2_NUM_INSTANCES 1
+/* Definitions for driver PMODGPIO */
+#define XPAR_PMODGPIO_NUM_INSTANCES 1
 
-/* Definitions for peripheral PMODACL2_0 */
-#define XPAR_PMODACL2_0_DEVICE_ID 0
-#define XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR 0x00030000
-#define XPAR_PMODACL2_0_AXI_LITE_SPI_HIGHADDR 0x0003FFFF
-#define XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR 0x00020000
-#define XPAR_PMODACL2_0_AXI_LITE_GPIO_HIGHADDR 0x00020FFF
+/* Definitions for peripheral PMODGPIO_0 */
+#define XPAR_PMODGPIO_0_DEVICE_ID 0
+#define XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR 0x00020000
+#define XPAR_PMODGPIO_0_AXI_LITE_GPIO_HIGHADDR 0x00020FFF
 
 
 /******************************************************************/

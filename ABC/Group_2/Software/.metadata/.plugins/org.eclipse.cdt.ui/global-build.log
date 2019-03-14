@@ -3122,3 +3122,1660 @@ mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib 
 c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
 collect2.exe: error: ld returned 1 exit status
 make: *** [makefile:50: ABC_Controller.elf] Error 1
+08:51:29 **** Auto Build of project ABC_Controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:51:39 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+In file included from ../src/Buzzer.cpp:9:0:
+../src/Buzzer.h:11:10: fatal error: PmodACL2.h: No such file or directory
+ #include "PmodACL2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+08:51:39 **** Auto Build of project Helloworld_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:51:43 **** Auto Build of configuration Debug for project Helloworld ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Helloworld_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Helloworld_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Helloworld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Helloworld_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Helloworld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Helloworld.elf  |tee "Helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	Helloworld.elf
+'Finished building: Helloworld.elf.size'
+' '
+08:51:59 **** Clean-only build of project ABC_Controller_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s clean 
+rm: cannot lstat `*.o': Invalid argument
+make[1]: *** [Makefile:26: clean] Error 1
+make: *** [Makefile:33: microblaze_0/libsrc/PmodACL2_v1_0/src/make.clean] Error 2
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make: Target 'clean' not remade because of errors.
+08:51:59 **** Clean-only build of project Helloworld_bsp ****
+make -k clean 
+make -C microblaze_0/libsrc/cpu_v2_8/src -s clean 
+make -C microblaze_0/libsrc/standalone_v6_8/src -s clean 
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s clean 
+rm: cannot lstat `*.o': Invalid argument
+make[1]: *** [Makefile:26: clean] Error 1
+make: *** [Makefile:33: microblaze_0/libsrc/PmodACL2_v1_0/src/make.clean] Error 2
+make -C microblaze_0/libsrc/bram_v4_2/src -s clean 
+make -C microblaze_0/libsrc/gpio_v4_3/src -s clean 
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s clean 
+make: Target 'clean' not remade because of errors.
+08:52:00 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+08:52:00 **** Clean-only build of configuration Debug for project Helloworld ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  Helloworld.elf.size  Helloworld.elf
+' '
+08:52:00 **** Build of project ABC_Controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:52:04 **** Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+08:52:05 **** Build of project Helloworld_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:52:08 **** Build of configuration Debug for project Helloworld ****
+make all 
+'Building file: ../src/helloworld.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -I../../Helloworld_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../Helloworld_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: Helloworld.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../Helloworld_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "Helloworld.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: Helloworld.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size Helloworld.elf  |tee "Helloworld.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2712	    268	   3108	   6088	   17c8	Helloworld.elf
+'Finished building: Helloworld.elf.size'
+' '
+08:54:21 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+08:57:51 **** Build of project ABC_controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+08:57:55 **** Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+08:57:57 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+08:58:25 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Buzzer.o: In function `Buzzer::Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_controller\Debug/../src/Buzzer.cpp:17: undefined reference to `ACL2_begin(PmodACL2*, unsigned long, unsigned long)'
+./src/Buzzer.o: In function `Buzzer::~Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_controller\Debug/../src/Buzzer.cpp:36: undefined reference to `ACL2_end(PmodACL2*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+08:58:50 **** Clean-only build of configuration Debug for project ABC_controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_controller.elf.size  ABC_controller.elf
+' '
+08:58:50 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+09:00:44 **** Clean-only build of configuration Debug for project ABC_controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_controller.elf.size  ABC_controller.elf
+' '
+09:00:44 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+09:00:45 **** Clean-only build of configuration Debug for project ABC_controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/LEDs.d  ABC_controller.elf.size  ABC_controller.elf
+' '
+09:00:45 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:8:10: fatal error: Buzzer.h: No such file or directory
+ #include "Buzzer.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:44: src/main.o] Error 1
+09:00:56 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+09:01:19 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:8:10: fatal error: Buzzer.h: No such file or directory
+ #include "Buzzer.h"
+          ^~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:44: src/main.o] Error 1
+09:01:29 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+09:03:07 **** Build of project ABC_Controller_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/iicps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_8/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_8/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling standalone"
+In file included from usleep.c:56:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xtime_l.c:49:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:53:0:
+xtime_l.h:87:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/canps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/canps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling canps"
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/iicps_v3_8/src"
+make -C ps7_cortexa9_0/libsrc/iicps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling iicps"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_10/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_10/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_6/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_7/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles -g -Wall -Wextra"
+"Compiling xadcps"
+'Finished building libraries'
+09:03:22 **** Build of configuration Debug for project ABC_Controller ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ABC_Controller_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/ps7_cortexa9_0/lib -o "ABC_Controller.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19024	   1144	  22576	  42744	   a6f8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:03:24 **** Auto Build of configuration Debug for project ABC_Controller ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: Nothing to be done for 'main-build'.
+09:05:30 **** Build of project ABC_Controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodACL2_v1_0/src"
+make -C microblaze_0/libsrc/PmodACL2_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodACL2..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:05:34 **** Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:05:35 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:06:34 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:07:19 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92156	   1436	   3192	  96784	  17a10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:09:23 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  92156	   1436	   3192	  96784	  17a10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:09:34 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:09:44 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:09:59 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:10:27 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:10:41 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:11:14 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:24:36 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:25:17 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:5: error: 'Buzzer' was not declared in this scope
+     Buzzer buz;
+     ^~~~~~
+../src/main.cc:16:5: error: 'buz' was not declared in this scope
+     buz.Sing(440);
+     ^~~
+make: *** [src/subdir.mk:47: src/main.o] Error 1
+09:25:23 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Buzzer.o: In function `Buzzer::Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:17: undefined reference to `ACL2_begin(PmodACL2*, unsigned long, unsigned long)'
+./src/Buzzer.o: In function `Buzzer::~Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:36: undefined reference to `ACL2_end(PmodACL2*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:25:58 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:25:58 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -L"D:\Shared\USN_study\Private\VHDL\vivado-library-2018.2-1\vivado-library" -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:25:59 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:25:59 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -L"D:\Shared\USN_study\Private\VHDL\vivado-library-2018.2-1\vivado-library" -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:26:41 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:26:41 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Buzzer.o: In function `Buzzer::Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:17: undefined reference to `ACL2_begin(PmodACL2*, unsigned long, unsigned long)'
+./src/Buzzer.o: In function `Buzzer::~Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:36: undefined reference to `ACL2_end(PmodACL2*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:26:52 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:26:52 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:26:59 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:26:59 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:27:05 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:27:26 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:27:58 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:28:20 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:30:50 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:30:50 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library -lD:/Shared/USN_study/Private/VHDL/vivado-boards-master/vivado-boards-master -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-boards-master/vivado-boards-master
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:30:59 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:30:59 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-boards-master/vivado-boards-master -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-boards-master/vivado-boards-master
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:31:07 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:31:07 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:31:13 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:31:14 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:31:28 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:31:40 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Buzzer.o: In function `Buzzer::Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:32: undefined reference to `ACL2_begin(PmodACL2*, unsigned long, unsigned long)'
+./src/Buzzer.o: In function `Buzzer::~Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:36: undefined reference to `ACL2_end(PmodACL2*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:31:45 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:34:21 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:34:21 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -L"D:\Shared\USN_study\Private\VHDL\vivado-library-2018.2-1\vivado-library\ip" -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:34:29 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:34:29 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -L"D:\Shared\USN_study\Private\VHDL\vivado-library-2018.2-1\vivado-library\ip" -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library/ip -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library/ip
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:34:35 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:34:35 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -L"D:\Shared\USN_study\Private\VHDL\vivado-library-2018.2-1\vivado-library\ip" -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library/ip -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: cannot find -lD:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library/ip
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:35:40 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:35:40 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:35:45 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:35:45 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:35:59 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Buzzer.o: In function `Buzzer::Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:32: undefined reference to `ACL2_begin(PmodACL2*, unsigned long, unsigned long)'
+./src/Buzzer.o: In function `Buzzer::~Buzzer()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Buzzer.cpp:36: undefined reference to `ACL2_end(PmodACL2*)'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+09:51:54 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:51:54 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+In file included from ../src/Buzzer.cpp:9:0:
+../src/Buzzer.h:11:10: fatal error: PmodACL2.h: No such file or directory
+ #include "PmodACL2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:51:55 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o  ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+09:51:55 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+In file included from ../src/Buzzer.cpp:9:0:
+../src/Buzzer.h:11:10: fatal error: PmodACL2.h: No such file or directory
+ #include "PmodACL2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:53:53 **** Build of project ABC_Controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGPIO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/PmodGPIO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPIO..."
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+09:53:56 **** Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+09:53:58 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+09:54:28 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+In file included from ../src/Buzzer.cpp:9:0:
+../src/Buzzer.h:11:10: fatal error: PmodACL2.h: No such file or directory
+ #include "PmodACL2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:55:00 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+../src/Buzzer.cpp:10:10: fatal error: PmodACL2.h: No such file or directory
+ #include "PmodACL2.h"
+          ^~~~~~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:55:10 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+In file included from ../src/Buzzer.cpp:9:0:
+../src/Buzzer.h:16:2: error: 'PmodACL2' does not name a type; did you mean 'PmodGPIO'?
+  PmodACL2 Buzz;
+  ^~~~~~~~
+  PmodGPIO
+../src/Buzzer.cpp: In constructor 'Buzzer::Buzzer()':
+../src/Buzzer.cpp:17:15: error: 'Buzz' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+               ^~~~
+../src/Buzzer.cpp:17:15: note: suggested alternative: 'Buzzer'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+               ^~~~
+               Buzzer
+../src/Buzzer.cpp:17:21: error: 'XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Buzzer.cpp:17:21: note: suggested alternative: 'XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR
+../src/Buzzer.cpp:17:61: error: 'XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Buzzer.cpp:17:61: note: suggested alternative: 'XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                             XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR
+../src/Buzzer.cpp:17:2: error: 'ACL2_begin' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+  ^~~~~~~~~~
+../src/Buzzer.cpp:17:2: note: suggested alternative: 'GPIO_begin'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+  ^~~~~~~~~~
+  GPIO_begin
+../src/Buzzer.cpp: In destructor 'virtual Buzzer::~Buzzer()':
+../src/Buzzer.cpp:36:13: error: 'Buzz' was not declared in this scope
+  ACL2_end( &Buzz);
+             ^~~~
+../src/Buzzer.cpp:36:13: note: suggested alternative: 'Buzzer'
+  ACL2_end( &Buzz);
+             ^~~~
+             Buzzer
+../src/Buzzer.cpp:36:2: error: 'ACL2_end' was not declared in this scope
+  ACL2_end( &Buzz);
+  ^~~~~~~~
+../src/Buzzer.cpp:36:2: note: suggested alternative: 'va_end'
+  ACL2_end( &Buzz);
+  ^~~~~~~~
+  va_end
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:55:39 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+../src/Buzzer.cpp: In constructor 'Buzzer::Buzzer()':
+../src/Buzzer.cpp:17:21: error: 'XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Buzzer.cpp:17:21: note: suggested alternative: 'XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR
+../src/Buzzer.cpp:17:61: error: 'XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Buzzer.cpp:17:61: note: suggested alternative: 'XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                             XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR
+../src/Buzzer.cpp:17:2: error: 'ACL2_begin' was not declared in this scope
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+  ^~~~~~~~~~
+../src/Buzzer.cpp:17:2: note: suggested alternative: 'GPIO_begin'
+  ACL2_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+  ^~~~~~~~~~
+  GPIO_begin
+../src/Buzzer.cpp: In destructor 'virtual Buzzer::~Buzzer()':
+../src/Buzzer.cpp:36:2: error: 'ACL2_end' was not declared in this scope
+  ACL2_end( &Buzz);
+  ^~~~~~~~
+../src/Buzzer.cpp:36:2: note: suggested alternative: 'va_end'
+  ACL2_end( &Buzz);
+  ^~~~~~~~
+  va_end
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:56:02 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+../src/Buzzer.cpp: In constructor 'Buzzer::Buzzer()':
+../src/Buzzer.cpp:17:21: error: 'XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR' was not declared in this scope
+  GPIO_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Buzzer.cpp:17:21: note: suggested alternative: 'XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR'
+  GPIO_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR
+../src/Buzzer.cpp:17:61: error: 'XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR' was not declared in this scope
+  GPIO_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Buzzer.cpp:17:61: note: suggested alternative: 'XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR'
+  GPIO_begin( &Buzz, XPAR_PMODACL2_0_AXI_LITE_GPIO_BASEADDR, XPAR_PMODACL2_0_AXI_LITE_SPI_BASEADDR);
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                                                             XPAR_PMODGPIO_0_AXI_LITE_GPIO_BASEADDR
+make: *** [src/subdir.mk:40: src/Buzzer.o] Error 1
+09:57:36 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '

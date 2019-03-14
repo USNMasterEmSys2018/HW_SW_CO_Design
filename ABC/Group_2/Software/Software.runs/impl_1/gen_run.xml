@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1552506589">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1552553246">
   <File Type="BITSTR-BMM" Name="ABC_wrapper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="ABC_wrapper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="ABC_wrapper_timing_summary_init.rpt"/>
@@ -125,6 +125,6 @@
   <BlockFileSet Type="BlockSrcs" Name="ABC_dlmb_v10_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ABC_clk_wiz_1_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ABC_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ABC_PmodACL2_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="ABC_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ABC_PmodGPIO_0_0"/>
 </GenRun>

@@ -37,13 +37,13 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ABC_axi_uartlit
 # IP: bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ABC_axi_gpio_0_0 || ORIG_REF_NAME==ABC_axi_gpio_0_0} -quiet] -quiet
 
-# IP: bd/ABC/ip/ABC_PmodACL2_0_0/ABC_PmodACL2_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ABC_PmodACL2_0_0 || ORIG_REF_NAME==ABC_PmodACL2_0_0} -quiet] -quiet
-
 # IP: bd/ABC/ip/ABC_xbar_0/ABC_xbar_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ABC_xbar_0 || ORIG_REF_NAME==ABC_xbar_0} -quiet] -quiet
 
 # IP: bd/ABC/ip/ABC_microblaze_0_axi_periph_0/ABC_microblaze_0_axi_periph_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ABC_microblaze_0_axi_periph_0 || ORIG_REF_NAME==ABC_microblaze_0_axi_periph_0} -quiet] -quiet
+
+# IP: bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==ABC_PmodGPIO_0_0 || ORIG_REF_NAME==ABC_PmodGPIO_0_0} -quiet] -quiet
 
 # XDC: bd/ABC/ABC_ooc.xdc

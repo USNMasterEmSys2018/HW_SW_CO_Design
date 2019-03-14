@@ -8,12 +8,12 @@
 #ifndef __BUZZER_H_
 #define __BUZZER_H_
 
-#include "PmodACL2.h"
+#include "PmodGPIO.h"
 #include "xparameters.h"
 
 class Buzzer {
 private:
-	PmodACL2 Buzz;
+	PmodGPIO Buzz;
 public:
 	Buzzer();
 	void Sing(int Freq);

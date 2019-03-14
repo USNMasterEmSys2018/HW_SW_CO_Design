@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="ABC_axi_uartlite_0_0_synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1552501675">
   <File Type="PA-TCL" Name="ABC_axi_uartlite_0_0.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ABC_axi_uartlite_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ABC_axi_uartlite_0_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="ABC_axi_uartlite_0_0.vds"/>
   <File Type="RDS-UTIL" Name="ABC_axi_uartlite_0_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ABC_axi_uartlite_0_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ABC_axi_uartlite_0_0.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ABC_axi_uartlite_0_0_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ABC_axi_uartlite_0_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ABC_axi_uartlite_0_0">
     <File Path="$PSRCDIR/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0.xci">
       <FileInfo>
