@@ -1,31 +1,21 @@
-09:57:36 **** Auto Build of configuration Debug for project ABC_Controller ****
+00:17:09 **** Auto Build of configuration Debug for project ABC_Controller ****
 make all 
-'Building file: ../src/Buzzer.cpp'
+'Building file: ../src/Memory.cpp'
 'Invoking: MicroBlaze g++ compiler'
-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
-'Finished building: ../src/Buzzer.cpp'
-' '
-'Building file: ../src/LEDs.cpp'
-'Invoking: MicroBlaze g++ compiler'
-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
-'Finished building: ../src/LEDs.cpp'
-' '
-'Building file: ../src/platform.c'
-'Invoking: MicroBlaze g++ compiler'
-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
-'Finished building: ../src/platform.c'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
 ' '
 'Building target: ABC_Controller.elf'
 'Invoking: MicroBlaze g++ linker'
-mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
 'Finished building target: ABC_Controller.elf'
 ' '
 'Invoking: MicroBlaze Print Size'
 mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
    text	   data	    bss	    dec	    hex	filename
- 122720	   1460	   3268	 127448	  1f1d8	ABC_Controller.elf
+  45420	   1332	   3248	  50000	   c350	ABC_Controller.elf
 'Finished building: ABC_Controller.elf.size'
 ' '
 
-09:57:36 Build Finished (took 631ms)
+00:17:09 Build Finished (took 379ms)
 
