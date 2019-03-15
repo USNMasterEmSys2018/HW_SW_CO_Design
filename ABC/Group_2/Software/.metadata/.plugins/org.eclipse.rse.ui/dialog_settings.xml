@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="RemoteSearchPage">
+		<item value="false" key="includeArchives"/>
+		<item value="false" key="fileNameRegex"/>
+		<item value="false" key="caseSensitive"/>
+		<item value="false" key="includeSubfolders"/>
+		<item value="1" key="dataSize"/>
+		<item value="false" key="stringRegex"/>
+		<item value="true" key="fileNameCaseSensitive"/>
+	</section>
+	<section name="RemoteSearchPage.data0">
+		<item value="9900K_1080ti" key="profileName"/>
+		<item value="print" key="searchString"/>
+		<item value="false" key="includeArchives"/>
+		<item value="false" key="fileNameRegex"/>
+		<item value="false" key="caseSensitive"/>
+		<item value="false" key="includeSubfolders"/>
+		<item value="false" key="stringRegex"/>
+		<item value="true" key="fileNameCaseSensitive"/>
+		<item value="Local" key="connectionName"/>
+		<item value="D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller_bsp" key="folderName"/>
+		<item value="*" key="fileNames"/>
+	</section>
+</section>

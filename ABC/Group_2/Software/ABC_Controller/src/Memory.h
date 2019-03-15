@@ -8,7 +8,6 @@
 #ifndef SRC_MEMORY_H_
 #define SRC_MEMORY_H_
 
-#include "xil_io.h"
 #include "xil_types.h"
 #include "xparameters.h"
 
@@ -56,6 +55,7 @@ public:
 	Memory();
 	u8 ReadNextNote();
 	void SaveNote(char Note);
+	void SaveNote(char Notes[], int length);
 	virtual ~Memory();
 };
 

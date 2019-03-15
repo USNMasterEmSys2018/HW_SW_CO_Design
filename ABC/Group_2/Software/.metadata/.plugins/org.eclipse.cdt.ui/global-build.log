@@ -12420,3 +12420,320 @@ mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
   45420	   1332	   3248	  50000	   c350	ABC_Controller.elf
 'Finished building: ABC_Controller.elf.size'
 ' '
+00:20:48 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:8:0:
+../src/Memory.h:59:16: error: 'string' has not been declared
+  void SaveNote(string Notes);
+                ^~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:21:00 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:8:0:
+../src/Memory.h:60:16: error: 'string' has not been declared
+  void SaveNote(string Notes);
+                ^~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:21:32 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:8:0:
+../src/Memory.h:61:16: error: 'string' has not been declared
+  void SaveNote(string Notes);
+                ^~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:21:49 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:8:0:
+../src/Memory.h:61:16: error: 'string' has not been declared
+  void SaveNote(string Notes);
+                ^~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:22:02 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:8:0:
+../src/Memory.h:61:16: error: 'string' has not been declared
+  void SaveNote(string Notes);
+                ^~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:22:18 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:22:35 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:23:16 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In function 'void SaveNote(char*, int)':
+../src/Memory.cpp:38:6: error: 'Note' was not declared in this scope
+  if((Note < 72 && Note > 64) ||(Note < 104 && Note > 96) )
+      ^~~~
+../src/Memory.cpp:38:6: note: suggested alternative: 'Notes'
+  if((Note < 72 && Note > 64) ||(Note < 104 && Note > 96) )
+      ^~~~
+      Notes
+../src/Memory.cpp:40:12: error: 'StopAddr' was not declared in this scope
+   Xil_Out8(StopAddr.Address(), Note);
+            ^~~~~~~~
+../src/Memory.cpp:40:12: note: suggested alternative: 'Addr'
+   Xil_Out8(StopAddr.Address(), Note);
+            ^~~~~~~~
+            Addr
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:23:25 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In function 'void SaveNote(char*, int)':
+../src/Memory.cpp:39:6: error: 'Note' was not declared in this scope
+  if((Note < 72 && Note > 64) ||(Note < 104 && Note > 96) )
+      ^~~~
+../src/Memory.cpp:39:6: note: suggested alternative: 'Notes'
+  if((Note < 72 && Note > 64) ||(Note < 104 && Note > 96) )
+      ^~~~
+      Notes
+../src/Memory.cpp:41:12: error: 'StopAddr' was not declared in this scope
+   Xil_Out8(StopAddr.Address(), Note);
+            ^~~~~~~~
+../src/Memory.cpp:41:12: note: suggested alternative: 'Addr'
+   Xil_Out8(StopAddr.Address(), Note);
+            ^~~~~~~~
+            Addr
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:23:48 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In function 'void SaveNote(char*, int)':
+../src/Memory.cpp:41:12: error: 'StopAddr' was not declared in this scope
+   Xil_Out8(StopAddr.Address(), Notes[i]);
+            ^~~~~~~~
+../src/Memory.cpp:41:12: note: suggested alternative: 'Addr'
+   Xil_Out8(StopAddr.Address(), Notes[i]);
+            ^~~~~~~~
+            Addr
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:24:03 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:24:09 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:39:09 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:40:00 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:7: warning: unused variable 'note' [-Wunused-variable]
+  char note;
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 392336 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:40:08 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:7: warning: unused variable 'note' [-Wunused-variable]
+  char note;
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 392336 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:40:26 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:7: warning: unused variable 'note' [-Wunused-variable]
+  char note;
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:42:01 **** Clean-only build of configuration Debug for project ABC_Controller ****
+make clean 
+rm -rf  ./src/main.d  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o  ./src/PmodGPIO.d ./src/platform.d  ./src/Buzzer.d ./src/LEDs.d ./src/Memory.d  ABC_Controller.elf.size  ABC_Controller.elf
+' '
+00:42:02 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/PmodGPIO.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PmodGPIO.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PmodGPIO.d" -MT"src/PmodGPIO.o" -o "src/PmodGPIO.o" "../src/PmodGPIO.c"
+'Finished building: ../src/PmodGPIO.c'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:7: warning: unused variable 'note' [-Wunused-variable]
+  char note;
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45420	   1332	   3248	  50000	   c350	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:42:13 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:42:45 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 393744 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:42:52 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45420	   1332	   3248	  50000	   c350	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '

@@ -31,6 +31,18 @@ void Memory::SaveNote(char Note)
 		StopAddr.Increment();
 	}
 }
+
+void Memory::SaveNote(char Notes[], int length)
+{
+	for(int i; i < length; i++)
+	{
+		if((Notes[i] < 72 && Notes[i] > 64) ||(Notes[i] < 104 && Notes[i] > 96) )
+		{
+			Xil_Out8(StopAddr.Address(), Notes[i]);
+			StopAddr.Increment();
+		}
+	}
+}
 Memory::~Memory() {
 	// TODO Auto-generated destructor stub
 }

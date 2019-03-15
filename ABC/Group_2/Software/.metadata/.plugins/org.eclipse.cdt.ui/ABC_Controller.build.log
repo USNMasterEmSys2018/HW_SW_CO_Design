@@ -1,4 +1,4 @@
-00:17:09 **** Auto Build of configuration Debug for project ABC_Controller ****
+00:42:52 **** Auto Build of configuration Debug for project ABC_Controller ****
 make all 
 'Building file: ../src/Memory.cpp'
 'Invoking: MicroBlaze g++ compiler'
@@ -17,5 +17,5 @@ mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
 'Finished building: ABC_Controller.elf.size'
 ' '
 
-00:17:09 Build Finished (took 379ms)
+00:42:53 Build Finished (took 427ms)
 
