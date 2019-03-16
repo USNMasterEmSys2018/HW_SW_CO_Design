@@ -14273,3 +14273,1833 @@ mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
 01:52:24 **** Incremental Build of configuration Debug for project ABC_Controller ****
 make all 
 make: Nothing to be done for 'all'.
+17:48:42 **** Build of configuration Debug for project ABC_Controller ****
+make all 
+make: *** No rule to make target 'Uart.o', needed by 'ABC_Controller.elf'.  Stop.
+17:49:24 **** Build of project ABC_Controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGPIO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodGPIO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPIO..."
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+17:49:43 **** Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/PmodGPIO.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PmodGPIO.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PmodGPIO.d" -MT"src/PmodGPIO.o" -o "src/PmodGPIO.o" "../src/PmodGPIO.c"
+'Finished building: ../src/PmodGPIO.c'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+make: *** No rule to make target 'Uart.o', needed by 'ABC_Controller.elf'.  Stop.
+17:50:03 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:16:7: warning: unused variable 'note' [-Wunused-variable]
+  char note[7] = {'C','D','E','F','G','A','B'};
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+make: *** No rule to make target 'Uart.o', needed by 'ABC_Controller.elf'.  Stop.
+17:50:12 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+make: *** No rule to make target 'Uart.o', needed by 'ABC_Controller.elf'.  Stop.
+17:50:22 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+make: *** No rule to make target 'Uart.o', needed by 'ABC_Controller.elf'.  Stop.
+17:56:02 **** Build of project ABC_controller_bsp ****
+make -k all 
+"Running Make include in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/PmodGPIO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make include in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Running Make libs in microblaze_0/libsrc/bram_v4_2/src"
+make -C microblaze_0/libsrc/bram_v4_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in microblaze_0/libsrc/cpu_v2_8/src"
+make -C microblaze_0/libsrc/cpu_v2_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling cpu"
+"Running Make libs in microblaze_0/libsrc/gpio_v4_3/src"
+make -C microblaze_0/libsrc/gpio_v4_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling gpio"
+"Running Make libs in microblaze_0/libsrc/PmodGPIO_v1_0/src"
+make -C microblaze_0/libsrc/PmodGPIO_v1_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling PmodGPIO..."
+"Running Make libs in microblaze_0/libsrc/standalone_v6_8/src"
+make -C microblaze_0/libsrc/standalone_v6_8/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling standalone";
+microblaze_sleep.c:77:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+"Running Make libs in microblaze_0/libsrc/uartlite_v3_2/src"
+make -C microblaze_0/libsrc/uartlite_v3_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-ffunction-sections -fdata-sections -Wall -Wextra"
+"Compiling uartlite"
+'Finished building libraries'
+17:56:07 **** Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   1952	    268	   3108	   5328	   14d0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+17:56:09 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+17:56:32 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building file: ../src/LEDs.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/LEDs.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/LEDs.d" -MT"src/LEDs.o" -o "src/LEDs.o" "../src/LEDs.cpp"
+'Finished building: ../src/LEDs.cpp'
+' '
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/PmodGPIO.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/PmodGPIO.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/PmodGPIO.d" -MT"src/PmodGPIO.o" -o "src/PmodGPIO.o" "../src/PmodGPIO.c"
+'Finished building: ../src/PmodGPIO.c'
+' '
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+'Finished building: ../src/Uart.cpp'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10988	   1308	   3176	  15472	   3c70	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+17:57:32 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+17:57:52 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+17:58:12 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+17:58:15 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:05:36 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+'Finished building: ../src/Uart.cpp'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:06:27 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp: In member function 'int Uart::Readbyte(char*)':
+../src/Uart.cpp:23:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+../src/Uart.cpp: In member function 'int Uart::Sendbyte(char)':
+../src/Uart.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Uart.cpp'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:07:51 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp: In member function 'int Uart::Readbyte(char*)':
+../src/Uart.cpp:22:86: error: invalid conversion from 'char*' to 'u8* {aka unsigned char*}' [-fpermissive]
+  return XUartLite_Recv(&FUart, Note, XPAR_BRAM_0_HIGHADDR -  XPAR_BRAM_0_BASEADDR + 1);
+                                                                                      ^
+In file included from ../src/Uart.h:11:0,
+                 from ../src/Uart.cpp:8:
+../../ABC_controller_bsp/microblaze_0/include/xuartlite.h:254:14: note:   initializing argument 2 of 'unsigned int XUartLite_Recv(XUartLite*, u8*, unsigned int)'
+ unsigned int XUartLite_Recv(XUartLite *InstancePtr, u8 *DataBufferPtr,
+              ^~~~~~~~~~~~~~
+../src/Uart.cpp: In member function 'int Uart::Sendbyte(char)':
+../src/Uart.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:49: src/Uart.o] Error 1
+18:08:13 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp:20:5: error: prototype for 'int Uart::Readbyte(u8*)' does not match any in class 'Uart'
+ int Uart::Readbyte(u8 *Note)
+     ^~~~
+In file included from ../src/Uart.cpp:8:0:
+../src/Uart.h:20:6: error: candidate is: int Uart::Readbyte(char*)
+  int Readbyte(char *Note);
+      ^~~~~~~~
+../src/Uart.cpp: In member function 'int Uart::Sendbyte(char)':
+../src/Uart.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+make: *** [src/subdir.mk:49: src/Uart.o] Error 1
+18:08:33 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp: In member function 'int Uart::Sendbyte(char)':
+../src/Uart.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Uart.cpp'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:08:46 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp: In member function 'int Uart::Sendbyte(char)':
+../src/Uart.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Uart.cpp'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:08:51 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp:25:5: error: prototype for 'int Uart::Sendbyte(char)' does not match any in class 'Uart'
+ int Uart::Sendbyte(char Note)
+     ^~~~
+In file included from ../src/Uart.cpp:8:0:
+../src/Uart.h:20:6: error: candidate is: int Uart::Sendbyte(u8)
+  int Sendbyte(u8 Note);
+      ^~~~~~~~
+make: *** [src/subdir.mk:49: src/Uart.o] Error 1
+18:08:57 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/Uart.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Uart.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Uart.d" -MT"src/Uart.o" -o "src/Uart.o" "../src/Uart.cpp"
+../src/Uart.cpp: In member function 'int Uart::Sendbyte(u8)':
+../src/Uart.cpp:28:1: warning: no return statement in function returning non-void [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/Uart.cpp'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:09:41 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11568	   1308	   3172	  16048	   3eb0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:10:29 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:33:6: error: expected primary-expression before ')' token
+   if()
+      ^
+../src/main.cc:34:2: error: expected primary-expression before '}' token
+  }
+  ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:11:18 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:35:21: error: no matching function for call to 'Uart::Readbyte()'
+   if(FUart.Readbyte())
+                     ^
+In file included from ../src/main.cc:11:0:
+../src/Uart.h:21:6: note: candidate: int Uart::Readbyte(u8*)
+  int Readbyte(u8 *Note);
+      ^~~~~~~~
+../src/Uart.h:21:6: note:   candidate expects 1 argument, 0 provided
+../src/main.cc:36:2: error: expected primary-expression before '}' token
+  }
+  ^
+../src/main.cc:34:6: warning: unused variable 'note' [-Wunused-variable]
+   u8 note;
+      ^~~~
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:11:30 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:36:2: error: expected primary-expression before '}' token
+  }
+  ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:12:13 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:10: error: too few arguments to function 'void print(const char8*)'
+    print();
+          ^
+In file included from ../src/main.cc:7:0:
+../../ABC_controller_bsp/microblaze_0/include/xil_printf.h:40:6: note: declared here
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:12:17 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:14: error: invalid conversion from 'u8 {aka unsigned char}' to 'const char8* {aka const char*}' [-fpermissive]
+    print(note);
+              ^
+In file included from ../src/main.cc:7:0:
+../../ABC_controller_bsp/microblaze_0/include/xil_printf.h:40:6: note:   initializing argument 1 of 'void print(const char8*)'
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:12:57 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  25236	   1336	   3260	  29832	   7488	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:13:04 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95716	   1464	   3276	 100456	  18868	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:13:20 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:13:50 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:14:26 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:16:44 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+../src/main.cc:18:1: error: 'Uart' in namespace 'std' does not name a type
+ Uart FUart;
+ ^~~~
+../src/main.cc: In function 'int main()':
+../src/main.cc:38:6: error: 'FUart' was not declared in this scope
+   if(FUart.Readbyte(&note)>0)
+      ^~~~~
+../src/main.cc:38:6: note: suggested alternative: 'Uart'
+   if(FUart.Readbyte(&note)>0)
+      ^~~~~
+      Uart
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:16:56 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:17:33 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:39:30: error: cannot convert 'std::__cxx11::string {aka std::__cxx11::basic_string<char>}' to 'const char8* {aka const char*}' for argument '1' to 'void print(const char8*)'
+    print(std::to_string(note));
+                              ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:18:37 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:18:42 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:20:33 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:23: error: invalid conversion from 'int' to 'const char8* {aka const char*}' [-fpermissive]
+   print(FUart.Readbyte(&note));
+         ~~~~~~~~~~~~~~^~~~~~~
+In file included from ../src/main.cc:7:0:
+../../ABC_controller_bsp/microblaze_0/include/xil_printf.h:40:6: note:   initializing argument 1 of 'void print(const char8*)'
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:20:54 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:22:05 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:22:28 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h: In member function 'std::__exception_ptr::exception_ptr::operator u8() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:145:16: error: invalid conversion from 'void*' to 'u8 {aka unsigned char}' [-fpermissive]
+       { return _M_exception_object; }
+                ^~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\move.h:54:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:235:12: error: redefinition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\type_traits:223:12: note: previous definition of 'struct std::__is_integral_helper<unsigned char>'
+     struct __is_integral_helper<bool>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:143:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h: In member function 'void std::nested_exception::rethrow_nested() const':
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\nested_exception.h:69:11: error: invalid user-defined conversion from 'const std::__exception_ptr::exception_ptr' to 'bool' [-fpermissive]
+       if (_M_ptr)
+           ^~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\exception:142:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note: candidate is: std::__exception_ptr::exception_ptr::operator u8() const <near match>
+       explicit operator bool() const
+                ^~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\exception_ptr.h:144:16: note:   return type 'u8 {aka unsigned char}' of explicit conversion function cannot be converted to 'bool' with a qualification conversion
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\stl_algobase.h:61:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\char_traits.h:39,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h: At global scope:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:159:12: error: redefinition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<unsigned char>
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\cpp_type_traits.h:138:12: note: previous definition of 'struct std::__is_integer<unsigned char>'
+     struct __is_integer<bool>
+            ^~~~~~~~~~~~~~~~~~
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\basic_string.h:6575:0,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\string:52,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\locale_classes.h:40,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\ios_base.h:41,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ios:42,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\ostream:38,
+                 from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\iostream:39,
+                 from ../src/main.cc:13:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:133:3: error: redefinition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(unsigned char)
+   ^
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\c++\7.3.1\bits\functional_hash.h:124:3: note: previous definition of 'struct std::hash<unsigned char>'
+   _Cxx_hashtable_define_trivial_hash(bool)
+   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:23:04 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  95440	   1464	   3272	 100176	  18750	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:23:08 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:24:17 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18000	   1352	   3320	  22672	   5890	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:25:23 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:26:24 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18008	   1352	   3320	  22680	   5898	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:26:29 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:29:55 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:35:35: error: expected ')' before ';' token
+   int size = (FUart.Readbyte(note);
+                                   ^
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:30:05 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17788	   1352	   3324	  22464	   57c0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:30:10 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:31:37 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:35:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17788	   1352	   3324	  22464	   57c0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:32:13 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17788	   1352	   3324	  22464	   57c0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:34:16 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:38:9: warning: variable 'notes' set but not used [-Wunused-but-set-variable]
+    char notes[size];
+         ^~~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17204	   1352	   3324	  21880	   5578	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:34:52 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  17768	   1352	   3320	  22440	   57a8	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:37:07 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19868	   1352	   3324	  24544	   5fe0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:37:15 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:38:34 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19868	   1352	   3324	  24544	   5fe0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:38:47 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19868	   1352	   3324	  24544	   5fe0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:39:19 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19868	   1352	   3324	  24544	   5fe0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:40:00 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:42:27 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19912	   1352	   3320	  24584	   6008	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:42:30 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:43:06 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:43:36 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19868	   1352	   3324	  24544	   5fe0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:43:40 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
+18:45:17 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36840 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:45:22 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36840 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:46:23 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19868	   1352	   3324	  24544	   5fe0	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:47:05 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:46:18: error: invalid conversion from 'char' to 'char*' [-fpermissive]
+    BRAM.SaveNote(*notes, size);
+                  ^~~~~~
+In file included from ../src/main.cc:10:0:
+../src/Memory.h:53:7: note:   initializing argument 1 of 'void Memory::SaveNote(char*, int)'
+  void SaveNote(char Notes[], int length);
+       ^~~~~~~~
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:47:21 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36840 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:47:50 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36840 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:48:07 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36840 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:48:25 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36800 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:48:53 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:29: error: 'note' was not declared in this scope
+   int size = FUart.Readbyte(note);
+                             ^~~~
+../src/main.cc:37:29: note: suggested alternative: 'nice'
+   int size = FUart.Readbyte(note);
+                             ^~~~
+                             nice
+../src/main.cc:40:4: error: 'notes' was not declared in this scope
+    notes = new char[size];
+    ^~~~~
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:49:00 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:29: error: 'note' was not declared in this scope
+   int size = FUart.Readbyte(note);
+                             ^~~~
+../src/main.cc:37:29: note: suggested alternative: 'nice'
+   int size = FUart.Readbyte(note);
+                             ^~~~
+                             nice
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:49:06 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:37:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18952	   1352	   3320	  23624	   5c48	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:49:17 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:8: warning: unused variable 'notes' [-Wunused-variable]
+  char *notes;
+        ^~~~~
+../src/main.cc:37:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18952	   1352	   3320	  23624	   5c48	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:49:23 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:8: warning: variable 'notes' set but not used [-Wunused-but-set-variable]
+  char *notes;
+        ^~~~~
+../src/main.cc:37:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36392 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:49:45 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:8: warning: variable 'notes' set but not used [-Wunused-but-set-variable]
+  char *notes;
+        ^~~~~
+../src/main.cc:37:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_controller.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 36392 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_controller.elf] Error 1
+18:49:49 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:8: warning: unused variable 'notes' [-Wunused-variable]
+  char *notes;
+        ^~~~~
+../src/main.cc:37:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  18952	   1352	   3320	  23624	   5c48	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:50:51 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:41:21: error: 'notes' was not declared in this scope
+     BRAM.SaveNote(*(notes+i));
+                     ^~~~~
+../src/main.cc:41:21: note: suggested alternative: 'note'
+     BRAM.SaveNote(*(notes+i));
+                     ^~~~~
+                     note
+make: *** [src/subdir.mk:63: src/main.o] Error 1
+18:50:57 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:36:33: warning: 'note' is used uninitialized in this function [-Wuninitialized]
+   int size = FUart.Readbyte(note);
+                                 ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19276	   1352	   3324	  23952	   5d90	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:51:07 **** Auto Build of configuration Debug for project ABC_controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/Uart.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_controller.elf  |tee "ABC_controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19276	   1352	   3324	  23952	   5d90	ABC_controller.elf
+'Finished building: ABC_controller.elf.size'
+' '
+18:51:21 **** Incremental Build of configuration Debug for project ABC_controller ****
+make all 
+make: Nothing to be done for 'all'.
