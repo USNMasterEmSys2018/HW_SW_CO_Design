@@ -17,60 +17,61 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.cache/wt [current_project]
-set_property parent.project_path E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.xpr [current_project]
+set_property webtalk.parent_dir D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.cache/wt [current_project]
+set_property parent.project_path D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.xpr [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
 set_property ip_repo_paths {
-  e:/Github/Private/VHDL/vivado-library-2018.2-1/vivado-library
-  e:/Github/vivado-library-2018.2-1
+  d:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library
+  d:/Shared/USN_study/vivado-library-2018.2-1
 } [current_project]
 update_ip_catalog
-set_property ip_output_repo e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.cache/ip [current_project]
+set_property ip_output_repo d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd
-add_files E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ABC.bd
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_lmb_bram_0/ABC_lmb_bram_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0_ooc_trace.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_xbar_0/ABC_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_pmod_bridge_0_0/PmodGPIO_pmod_bridge_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_axi_gpio_0_0/PmodGPIO_axi_gpio_0_0_board.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_axi_gpio_0_0/PmodGPIO_axi_gpio_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_axi_gpio_0_0/PmodGPIO_axi_gpio_0_0.xdc]
-set_property used_in_implementation false [get_files -all E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ABC_ooc.xdc]
+read_vhdl -library xil_defaultlib D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd
+add_files D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ABC.bd
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_lmb_bram_0/ABC_lmb_bram_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0_ooc_trace.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_xbar_0/ABC_xbar_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_pmod_bridge_0_0/PmodGPIO_pmod_bridge_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_pmod_bridge_0_0/src/pmod_concat_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_axi_gpio_0_0/PmodGPIO_axi_gpio_0_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_axi_gpio_0_0/PmodGPIO_axi_gpio_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/src/PmodGPIO_axi_gpio_0_0/PmodGPIO_axi_gpio_0_0.xdc]
+set_property used_in_implementation false [get_files -all D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ABC_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

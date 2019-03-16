@@ -1,0 +1,7 @@
+Running: xsim.dir/RX_TX_read_write_control_behav/xsimk.exe -simmode gui -wdb RX_TX_read_write_control_behav.wdb -simrunnum 0 -socket 60128
+Design successfully loaded
+Design Loading Memory Usage: 5592 KB (Peak: 5592 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6376 KB (Peak: 6376 KB)
+Simulation CPU Usage: 15 ms

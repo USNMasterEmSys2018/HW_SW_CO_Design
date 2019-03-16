@@ -2,103 +2,103 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat Mar 16 17:52:06 2019
-# Process ID: 19904
-# Current directory: E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1
+# Start of session at: Sat Mar 16 23:48:36 2019
+# Process ID: 8808
+# Current directory: D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1
 # Command line: vivado.exe -log ABC_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ABC_wrapper.tcl
-# Log file: E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/ABC_wrapper.vds
-# Journal file: E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1\vivado.jou
+# Log file: D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/ABC_wrapper.vds
+# Journal file: D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source ABC_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
-WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'e:/Github/Private/VHDL/vivado-library-2018.2-1/vivado-library'; Can't find the specified path.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'd:/Shared/USN_study/vivado-library-2018.2-1'; Can't find the specified path.
 If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'e:/Github/vivado-library-2018.2-1'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
 Command: synth_design -top ABC_wrapper -part xc7a35tcpg236-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17248 
+INFO: Helper process launched with PID 17448 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 463.242 ; gain = 101.313
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 462.617 ; gain = 101.109
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ABC_wrapper' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:32]
-INFO: [Synth 8-3491] module 'ABC' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1869' bound to instance 'ABC_i' of component 'ABC' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'ABC' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1909]
-INFO: [Synth 8-3491] module 'ABC_PmodGPIO_0_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_PmodGPIO_0_0_stub.vhdl:5' bound to instance 'PmodGPIO_0' of component 'ABC_PmodGPIO_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2322]
-INFO: [Synth 8-638] synthesizing module 'ABC_PmodGPIO_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_PmodGPIO_0_0_stub.vhdl:54]
-INFO: [Synth 8-3491] module 'ABC_axi_gpio_0_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'ABC_axi_gpio_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2368]
-INFO: [Synth 8-638] synthesizing module 'ABC_axi_gpio_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_axi_gpio_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'ABC_axi_uartlite_0_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'ABC_axi_uartlite_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2393]
-INFO: [Synth 8-638] synthesizing module 'ABC_axi_uartlite_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_axi_uartlite_0_0_stub.vhdl:33]
-INFO: [Synth 8-3491] module 'ABC_clk_wiz_1_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'ABC_clk_wiz_1_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2418]
-INFO: [Synth 8-638] synthesizing module 'ABC_clk_wiz_1_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_clk_wiz_1_0_stub.vhdl:15]
-INFO: [Synth 8-3491] module 'ABC_mdm_1_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'ABC_mdm_1_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2425]
-INFO: [Synth 8-638] synthesizing module 'ABC_mdm_1_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_mdm_1_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'ABC_microblaze_0_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'ABC_microblaze_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2438]
-INFO: [Synth 8-638] synthesizing module 'ABC_microblaze_0_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_microblaze_0_0_stub.vhdl:63]
-INFO: [Synth 8-638] synthesizing module 'ABC_microblaze_0_axi_periph_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1203]
-INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_12D87UC' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:57]
-INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_12D87UC' (1#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_OD6ZOX' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:158]
-INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_OD6ZOX' (2#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:158]
-INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1SYG7I7' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:259]
-INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1SYG7I7' (3#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:259]
-INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_FEW03E' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:364]
-INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_FEW03E' (4#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:364]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_9SZS7I' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1033]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_9SZS7I' (5#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1033]
-INFO: [Synth 8-3491] module 'ABC_xbar_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'ABC_xbar_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1735]
-INFO: [Synth 8-638] synthesizing module 'ABC_xbar_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_xbar_0_stub.vhdl:51]
-INFO: [Synth 8-256] done synthesizing module 'ABC_microblaze_0_axi_periph_0' (6#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1203]
-INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_RA7C2E' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:454]
-INFO: [Synth 8-3491] module 'ABC_dlmb_bram_if_cntlr_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'ABC_dlmb_bram_if_cntlr_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:668]
-INFO: [Synth 8-638] synthesizing module 'ABC_dlmb_bram_if_cntlr_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_dlmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'ABC_dlmb_v10_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'ABC_dlmb_v10_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:722]
-INFO: [Synth 8-638] synthesizing module 'ABC_dlmb_v10_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_dlmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'ABC_ilmb_bram_if_cntlr_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'ABC_ilmb_bram_if_cntlr_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:750]
-INFO: [Synth 8-638] synthesizing module 'ABC_ilmb_bram_if_cntlr_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_ilmb_bram_if_cntlr_0_stub.vhdl:31]
-INFO: [Synth 8-3491] module 'ABC_ilmb_v10_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'ABC_ilmb_v10_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:804]
-INFO: [Synth 8-638] synthesizing module 'ABC_ilmb_v10_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_ilmb_v10_0_stub.vhdl:36]
-INFO: [Synth 8-3491] module 'ABC_lmb_bram_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'ABC_lmb_bram_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:832]
-INFO: [Synth 8-638] synthesizing module 'ABC_lmb_bram_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_lmb_bram_0_stub.vhdl:27]
-INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_RA7C2E' (7#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:454]
-INFO: [Synth 8-3491] module 'ABC_rst_clk_wiz_1_100M_0' declared at 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'ABC_rst_clk_wiz_1_100M_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2621]
-INFO: [Synth 8-638] synthesizing module 'ABC_rst_clk_wiz_1_100M_0' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-19904-Acer_1050ti/realtime/ABC_rst_clk_wiz_1_100M_0_stub.vhdl:21]
-INFO: [Synth 8-256] done synthesizing module 'ABC' (8#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1909]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin10_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:244]
+INFO: [Synth 8-638] synthesizing module 'ABC_wrapper' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:32]
+INFO: [Synth 8-3491] module 'ABC' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1869' bound to instance 'ABC_i' of component 'ABC' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'ABC' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1909]
+INFO: [Synth 8-3491] module 'ABC_PmodGPIO_0_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_PmodGPIO_0_0_stub.vhdl:5' bound to instance 'PmodGPIO_0' of component 'ABC_PmodGPIO_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2322]
+INFO: [Synth 8-638] synthesizing module 'ABC_PmodGPIO_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_PmodGPIO_0_0_stub.vhdl:54]
+INFO: [Synth 8-3491] module 'ABC_axi_gpio_0_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_axi_gpio_0_0_stub.vhdl:5' bound to instance 'axi_gpio_0' of component 'ABC_axi_gpio_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2368]
+INFO: [Synth 8-638] synthesizing module 'ABC_axi_gpio_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_axi_gpio_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'ABC_axi_uartlite_0_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_axi_uartlite_0_0_stub.vhdl:5' bound to instance 'axi_uartlite_0' of component 'ABC_axi_uartlite_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2393]
+INFO: [Synth 8-638] synthesizing module 'ABC_axi_uartlite_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_axi_uartlite_0_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'ABC_clk_wiz_1_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_clk_wiz_1_0_stub.vhdl:5' bound to instance 'clk_wiz_1' of component 'ABC_clk_wiz_1_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2418]
+INFO: [Synth 8-638] synthesizing module 'ABC_clk_wiz_1_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_clk_wiz_1_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'ABC_mdm_1_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_mdm_1_0_stub.vhdl:5' bound to instance 'mdm_1' of component 'ABC_mdm_1_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2425]
+INFO: [Synth 8-638] synthesizing module 'ABC_mdm_1_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_mdm_1_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'ABC_microblaze_0_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_microblaze_0_0_stub.vhdl:5' bound to instance 'microblaze_0' of component 'ABC_microblaze_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2438]
+INFO: [Synth 8-638] synthesizing module 'ABC_microblaze_0_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_microblaze_0_0_stub.vhdl:63]
+INFO: [Synth 8-638] synthesizing module 'ABC_microblaze_0_axi_periph_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1203]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_12D87UC' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:57]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_12D87UC' (1#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_OD6ZOX' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:158]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_OD6ZOX' (2#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1SYG7I7' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:259]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1SYG7I7' (3#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:259]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_FEW03E' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:364]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_FEW03E' (4#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:364]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_9SZS7I' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1033]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_9SZS7I' (5#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1033]
+INFO: [Synth 8-3491] module 'ABC_xbar_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'ABC_xbar_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1735]
+INFO: [Synth 8-638] synthesizing module 'ABC_xbar_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_xbar_0_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 'ABC_microblaze_0_axi_periph_0' (6#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1203]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_RA7C2E' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:454]
+INFO: [Synth 8-3491] module 'ABC_dlmb_bram_if_cntlr_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_dlmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'dlmb_bram_if_cntlr' of component 'ABC_dlmb_bram_if_cntlr_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:668]
+INFO: [Synth 8-638] synthesizing module 'ABC_dlmb_bram_if_cntlr_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_dlmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'ABC_dlmb_v10_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_dlmb_v10_0_stub.vhdl:5' bound to instance 'dlmb_v10' of component 'ABC_dlmb_v10_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:722]
+INFO: [Synth 8-638] synthesizing module 'ABC_dlmb_v10_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_dlmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'ABC_ilmb_bram_if_cntlr_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_ilmb_bram_if_cntlr_0_stub.vhdl:5' bound to instance 'ilmb_bram_if_cntlr' of component 'ABC_ilmb_bram_if_cntlr_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:750]
+INFO: [Synth 8-638] synthesizing module 'ABC_ilmb_bram_if_cntlr_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_ilmb_bram_if_cntlr_0_stub.vhdl:31]
+INFO: [Synth 8-3491] module 'ABC_ilmb_v10_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_ilmb_v10_0_stub.vhdl:5' bound to instance 'ilmb_v10' of component 'ABC_ilmb_v10_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:804]
+INFO: [Synth 8-638] synthesizing module 'ABC_ilmb_v10_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_ilmb_v10_0_stub.vhdl:36]
+INFO: [Synth 8-3491] module 'ABC_lmb_bram_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_lmb_bram_0_stub.vhdl:5' bound to instance 'lmb_bram' of component 'ABC_lmb_bram_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:832]
+INFO: [Synth 8-638] synthesizing module 'ABC_lmb_bram_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_lmb_bram_0_stub.vhdl:27]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_RA7C2E' (7#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:454]
+INFO: [Synth 8-3491] module 'ABC_rst_clk_wiz_1_100M_0' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_rst_clk_wiz_1_100M_0_stub.vhdl:5' bound to instance 'rst_clk_wiz_1_100M' of component 'ABC_rst_clk_wiz_1_100M_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:2621]
+INFO: [Synth 8-638] synthesizing module 'ABC_rst_clk_wiz_1_100M_0' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/.Xil/Vivado-8808-9900K_1080ti/realtime/ABC_rst_clk_wiz_1_100M_0_stub.vhdl:21]
+INFO: [Synth 8-256] done synthesizing module 'ABC' (8#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/synth/ABC.vhd:1909]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin10_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:244]
 INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
 	Parameter DRIVE bound to: 12 - type: integer 
 	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
 	Parameter IOSTANDARD bound to: DEFAULT - type: string 
 	Parameter SLEW bound to: SLOW - type: string 
 INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (9#1) [C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin1_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:251]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin2_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:258]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin3_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:265]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin4_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:272]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin7_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:279]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin8_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:286]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin9_iobuf' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:293]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_0' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:300]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_1' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:307]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_10' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:314]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_11' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:321]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_12' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:328]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_13' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:335]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_14' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:342]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_15' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:349]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_2' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:356]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_3' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:363]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_4' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:370]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_5' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:377]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_6' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:384]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_7' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:391]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_8' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:398]
-INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_9' of component 'IOBUF' [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:405]
-INFO: [Synth 8-256] done synthesizing module 'ABC_wrapper' (10#1) [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:32]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin1_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:251]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin2_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:258]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin3_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:265]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin4_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:272]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin7_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:279]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin8_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:286]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'jb_pin9_iobuf' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:293]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_0' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:300]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_1' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:307]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_10' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:314]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_11' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:321]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_12' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:328]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_13' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:335]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_14' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:342]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_15' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:349]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_2' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:356]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_3' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:363]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_4' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:370]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_5' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:377]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_6' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:384]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_7' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:391]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_8' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:398]
+INFO: [Synth 8-3491] module 'IOBUF' declared at 'C:/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:23615' bound to instance 'led_16bits_tri_iobuf_9' of component 'IOBUF' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:405]
+INFO: [Synth 8-256] done synthesizing module 'ABC_wrapper' (10#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/hdl/ABC_wrapper.vhd:32]
 WARNING: [Synth 8-3331] design s00_couplers_imp_9SZS7I has unconnected port M_ACLK
 WARNING: [Synth 8-3331] design s00_couplers_imp_9SZS7I has unconnected port M_ARESETN
 WARNING: [Synth 8-3331] design s00_couplers_imp_9SZS7I has unconnected port S_ACLK
@@ -130,7 +130,7 @@ WARNING: [Synth 8-3331] design ABC_microblaze_0_axi_periph_0 has unconnected por
 WARNING: [Synth 8-3331] design ABC_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design ABC_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 522.613 ; gain = 160.684
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 522.785 ; gain = 161.277
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -143,10 +143,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 522.613 ; gain = 160.684
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 522.785 ; gain = 161.277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 522.613 ; gain = 160.684
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 522.785 ; gain = 161.277
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -155,59 +155,59 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0/ABC_microblaze_0_0_in_context.xdc] for cell 'ABC_i/microblaze_0'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0/ABC_microblaze_0_0_in_context.xdc] for cell 'ABC_i/microblaze_0'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_v10'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_v10'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_v10'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_v10'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_lmb_bram_0/ABC_lmb_bram_0/ABC_lmb_bram_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/lmb_bram'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_lmb_bram_0/ABC_lmb_bram_0/ABC_lmb_bram_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/lmb_bram'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0/ABC_mdm_1_0_in_context.xdc] for cell 'ABC_i/mdm_1'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0/ABC_mdm_1_0_in_context.xdc] for cell 'ABC_i/mdm_1'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc] for cell 'ABC_i/clk_wiz_1'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc] for cell 'ABC_i/clk_wiz_1'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'ABC_i/rst_clk_wiz_1_100M'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'ABC_i/rst_clk_wiz_1_100M'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_in_context.xdc] for cell 'ABC_i/axi_uartlite_0'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_in_context.xdc] for cell 'ABC_i/axi_uartlite_0'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_in_context.xdc] for cell 'ABC_i/axi_gpio_0'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_in_context.xdc] for cell 'ABC_i/axi_gpio_0'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_xbar_0/ABC_xbar_0/ABC_xbar_0_in_context.xdc] for cell 'ABC_i/microblaze_0_axi_periph/xbar'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_xbar_0/ABC_xbar_0/ABC_xbar_0_in_context.xdc] for cell 'ABC_i/microblaze_0_axi_periph/xbar'
-Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0_in_context.xdc] for cell 'ABC_i/PmodGPIO_0'
-Finished Parsing XDC File [e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0_in_context.xdc] for cell 'ABC_i/PmodGPIO_0'
-Parsing XDC File [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/dont_touch.xdc]
-Finished Parsing XDC File [E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/dont_touch.xdc]
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0/ABC_microblaze_0_0_in_context.xdc] for cell 'ABC_i/microblaze_0'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_microblaze_0_0/ABC_microblaze_0_0/ABC_microblaze_0_0_in_context.xdc] for cell 'ABC_i/microblaze_0'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_v10_0/ABC_dlmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_v10_0/ABC_ilmb_v10_0/ABC_dlmb_v10_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0/ABC_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0/ABC_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_lmb_bram_0/ABC_lmb_bram_0/ABC_lmb_bram_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_lmb_bram_0/ABC_lmb_bram_0/ABC_lmb_bram_0_in_context.xdc] for cell 'ABC_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0/ABC_mdm_1_0_in_context.xdc] for cell 'ABC_i/mdm_1'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_mdm_1_0/ABC_mdm_1_0/ABC_mdm_1_0_in_context.xdc] for cell 'ABC_i/mdm_1'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc] for cell 'ABC_i/clk_wiz_1'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc] for cell 'ABC_i/clk_wiz_1'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'ABC_i/rst_clk_wiz_1_100M'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0/ABC_rst_clk_wiz_1_100M_0_in_context.xdc] for cell 'ABC_i/rst_clk_wiz_1_100M'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_in_context.xdc] for cell 'ABC_i/axi_uartlite_0'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0/ABC_axi_uartlite_0_0_in_context.xdc] for cell 'ABC_i/axi_uartlite_0'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_in_context.xdc] for cell 'ABC_i/axi_gpio_0'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0/ABC_axi_gpio_0_0_in_context.xdc] for cell 'ABC_i/axi_gpio_0'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_xbar_0/ABC_xbar_0/ABC_xbar_0_in_context.xdc] for cell 'ABC_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_xbar_0/ABC_xbar_0/ABC_xbar_0_in_context.xdc] for cell 'ABC_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0_in_context.xdc] for cell 'ABC_i/PmodGPIO_0'
+Finished Parsing XDC File [d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0/ABC_PmodGPIO_0_0_in_context.xdc] for cell 'ABC_i/PmodGPIO_0'
+Parsing XDC File [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.398 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 24 instances
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.738 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 813.738 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 813.410 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 813.410 ; gain = 0.012
 WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ABC_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 814.871 ; gain = 452.941
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 814.918 ; gain = 453.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 814.871 ; gain = 452.941
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 814.918 ; gain = 453.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  e:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  d:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.srcs/sources_1/bd/ABC/ip/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0/ABC_clk_wiz_1_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for ABC_i. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ABC_i/microblaze_0. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ABC_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint, line ).
@@ -224,10 +224,10 @@ Applied set_property DONT_TOUCH = true for ABC_i/microblaze_0_axi_periph/xbar. (
 Applied set_property DONT_TOUCH = true for ABC_i/microblaze_0_axi_periph. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for ABC_i/PmodGPIO_0. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 814.871 ; gain = 452.941
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 814.918 ; gain = 453.410
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 814.871 ; gain = 452.941
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 814.918 ; gain = 453.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -273,7 +273,7 @@ WARNING: [Synth 8-3331] design ABC_microblaze_0_axi_periph_0 has unconnected por
 WARNING: [Synth 8-3331] design ABC_microblaze_0_axi_periph_0 has unconnected port S00_ACLK
 WARNING: [Synth 8-3331] design ABC_microblaze_0_axi_periph_0 has unconnected port S00_ARESETN
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 814.871 ; gain = 452.941
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 814.918 ; gain = 453.410
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,13 +291,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'ABC_i/mdm_1/Dbg_Update_0'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'ABC_i/clk_wiz_1/clk_out1' to pin 'ABC_i/clk_wiz_1/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 5 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 815.836 ; gain = 453.906
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 816.582 ; gain = 455.074
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 815.984 ; gain = 454.055
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 816.730 ; gain = 455.223
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -309,7 +309,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -333,7 +333,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -346,7 +346,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -358,25 +358,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -433,17 +433,17 @@ Report Instance Areas:
 |4     |    microblaze_0_local_memory |microblaze_0_local_memory_imp_RA7C2E |   496|
 +------+------------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 827.117 ; gain = 465.609
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 826.367 ; gain = 172.180
-Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 826.367 ; gain = 464.438
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 827.117 ; gain = 173.477
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 827.117 ; gain = 465.609
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 836.344 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.172 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 24 instances were transformed.
   IOBUF => IOBUF (IBUF, OBUFT): 24 instances
@@ -451,10 +451,10 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 93 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 836.344 ; gain = 481.313
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 836.344 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 840.266 ; gain = 485.652
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 840.266 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'E:/Github/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/ABC_wrapper.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/Software.runs/synth_1/ABC_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file ABC_wrapper_utilization_synth.rpt -pb ABC_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Mar 16 17:52:36 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 16 23:49:00 2019...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Mar 16 23:29:08 2019
+# Process ID: 4464
+# Current directory: D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.runs/synth_1
+# Command line: vivado.exe -log RX_TX_read_write_control.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RX_TX_read_write_control.tcl
+# Log file: D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.runs/synth_1/RX_TX_read_write_control.vds
+# Journal file: D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source RX_TX_read_write_control.tcl -notrace

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1552775347">
+  <File Type="PA-TCL" Name="RX_TX_read_write_control.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="RX_TX_read_write_control_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="RX_TX_read_write_control_reports.tcl"/>
+  <File Type="RDS-RDS" Name="RX_TX_read_write_control.vds"/>
+  <File Type="RDS-UTIL" Name="RX_TX_read_write_control_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="RX_TX_read_write_control_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="RX_TX_read_write_control.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="RX_TX_read_write_control_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="RX_TX_read_write_control_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Group_2/Main_state_machine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sources_1/imports/Group_2/Main_state_machine.vhd"/>
+        <Attr Name="ImportTime" Val="1552763864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Group_2/Memory_control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sources_1/imports/Group_2/Memory_control.vhd"/>
+        <Attr Name="ImportTime" Val="1552763864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Group_2/Read_data_state_machine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sources_1/imports/Group_2/Read_data_state_machine.vhd"/>
+        <Attr Name="ImportTime" Val="1552763864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Group_2/Self_block_ram_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sources_1/imports/Group_2/Self_block_ram_wrapper.vhd"/>
+        <Attr Name="ImportTime" Val="1552763864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Group_2/Send_data_state_machine.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sources_1/imports/Group_2/Send_data_state_machine.vhd"/>
+        <Attr Name="ImportTime" Val="1552765762"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Group_2/RX_TX_read_write_control.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../sources_1/imports/Group_2/RX_TX_read_write_control.vhd"/>
+        <Attr Name="ImportTime" Val="1552763864"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="RX_TX_read_write_control"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Cheating_dice/Basys3.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../Private/VHDL/Cheating_dice/Basys3.xdc"/>
+        <Attr Name="ImportTime" Val="1547674026"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

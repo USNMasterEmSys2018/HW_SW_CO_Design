@@ -2915,3 +2915,9 @@ con
 
 18:51:23 INFO  : Launch script is exported to file 'E:\Github\HW_SW_CO_Design\ABC\Group_2\Software\.sdk\launch_scripts\xilinx_c-c++_application_(system_debugger)\system_debugger_using_debug_abc_controller.elf_on_local.tcl'
 18:53:01 INFO  : Disconnected from the channel tcfchan#21.
+23:47:14 INFO  : Registering command handlers for SDK TCF services
+23:47:15 INFO  : Launching XSCT server: xsct.bat -interactive D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\temp_xsdb_launch_script.tcl
+23:47:17 INFO  : XSCT server has started successfully.
+23:47:18 INFO  : Successfully done setting XSCT server connection channel  
+23:47:18 INFO  : Processing command line option -hwspec D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Software/ABC_wrapper.hdf.
+23:47:18 INFO  : Successfully done setting SDK workspace  
