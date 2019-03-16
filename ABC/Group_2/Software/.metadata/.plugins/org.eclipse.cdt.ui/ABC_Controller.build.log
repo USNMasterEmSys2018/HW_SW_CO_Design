@@ -1,21 +1,6 @@
-00:42:52 **** Auto Build of configuration Debug for project ABC_Controller ****
+01:52:24 **** Incremental Build of configuration Debug for project ABC_Controller ****
 make all 
-'Building file: ../src/Memory.cpp'
-'Invoking: MicroBlaze g++ compiler'
-mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
-'Finished building: ../src/Memory.cpp'
-' '
-'Building target: ABC_Controller.elf'
-'Invoking: MicroBlaze g++ linker'
-mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
-'Finished building target: ABC_Controller.elf'
-' '
-'Invoking: MicroBlaze Print Size'
-mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  45420	   1332	   3248	  50000	   c350	ABC_Controller.elf
-'Finished building: ABC_Controller.elf.size'
-' '
+make: Nothing to be done for 'all'.
 
-00:42:53 Build Finished (took 427ms)
+01:52:24 Build Finished (took 75ms)
 

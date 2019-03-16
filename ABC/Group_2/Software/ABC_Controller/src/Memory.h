@@ -14,25 +14,22 @@
 class Addr
 {
 private:
-	const UINTPTR StartAddr = XPAR_BRAM_1_BASEADDR;
-	const UINTPTR EndAddr = XPAR_BRAM_1_HIGHADDR;
-	UINTPTR CurrentAddr;
+	const long int StartAddr = XPAR_BRAM_1_BASEADDR;
+	const long int EndAddr = XPAR_BRAM_1_HIGHADDR;
+	long int CurrentAddr;
 public:
 	Addr()
 	{
 		CurrentAddr = StartAddr;
 	}
-	UINTPTR Address()
+	long int Address()
 	{
 		return CurrentAddr;
 	}
 	void Increment()
 	{
-		if(CurrentAddr < EndAddr)
-		{
-			CurrentAddr++;
-		}
-		else
+		CurrentAddr = CurrentAddr + 8;
+		if(CurrentAddr >= EndAddr - 7)
 		{
 			CurrentAddr = StartAddr;
 		}
@@ -41,22 +38,19 @@ public:
 	{
 		return CurrentAddr != rhs.CurrentAddr;
 	}
-	virtual ~Addr();
 };
 
 
 class Memory
 {
 private:
-	const UINTPTR StartAddr = XPAR_BRAM_1_BASEADDR;
-	const UINTPTR EndAddr = XPAR_BRAM_1_HIGHADDR;
+	const long int StartAddr = XPAR_BRAM_1_BASEADDR;
+	const long int EndAddr = XPAR_BRAM_1_HIGHADDR;
 	Addr CurrentAddr, StopAddr;
 public:
-	Memory();
 	u8 ReadNextNote();
 	void SaveNote(char Note);
 	void SaveNote(char Notes[], int length);
-	virtual ~Memory();
 };
 
 

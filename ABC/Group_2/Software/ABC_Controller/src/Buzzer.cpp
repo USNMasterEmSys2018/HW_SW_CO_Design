@@ -42,7 +42,7 @@ void Buzzer::Sing(char note)
 	int delay = (100000000/Freq) >> 1; //us
 	int en = 1;
 
-	for(int i = 0; i < Freq*2; i++)
+	for(int i = 0; i < Freq*2/100; i++)
 	{
 		GPIO_setPin(&Buzz, 2, en);
 		usleep(delay);

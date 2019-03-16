@@ -12737,3 +12737,1539 @@ mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
   45420	   1332	   3248	  50000	   c350	ABC_Controller.elf
 'Finished building: ABC_Controller.elf.size'
 ' '
+00:46:33 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:25: error: initializer-string for array of chars is too long [-fpermissive]
+  char note[5] = {"hello"};
+                         ^
+../src/main.cc:15:7: warning: unused variable 'note' [-Wunused-variable]
+  char note[5] = {"hello"};
+       ^~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+00:46:54 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:15:7: warning: unused variable 'note' [-Wunused-variable]
+  char note[6] = {"hello"};
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45444	   1332	   3248	  50024	   c368	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:47:11 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:16:7: warning: unused variable 'note' [-Wunused-variable]
+  char note[6] = {"hello"};
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45444	   1332	   3248	  50024	   c368	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:47:26 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:16:7: warning: unused variable 'note' [-Wunused-variable]
+  char note[6] = {"hello"};
+       ^~~~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  45444	   1332	   3248	  50024	   c368	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:48:28 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:19:2: error: expected ';' before 'while'
+  while(1)
+  ^~~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+00:48:30 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:49:14 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:19:6: error: expected primary-expression before 'int'
+  For(int i; i< 5; i++)
+      ^~~
+../src/main.cc:19:13: error: 'i' was not declared in this scope
+  For(int i; i< 5; i++)
+             ^
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+00:49:18 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:50:42 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:19: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+   LED.LightUp(note);
+                   ^
+In file included from ../src/main.cc:8:0:
+../src/LEDs.h:19:7: note:   initializing argument 1 of 'void LEDs::LightUp(char)'
+  void LightUp(char Note);
+       ^~~~~~~
+../src/main.cc:25:16: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+   buz.Sing(note);
+                ^
+In file included from ../src/main.cc:9:0:
+../src/Buzzer.h:27:7: note:   initializing argument 1 of 'void Buzzer::Sing(char)'
+  void Sing(char note);
+       ^~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+00:51:21 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:52:29 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:29: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:42: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:42: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:52:33 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:46: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:52:39 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:47: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:47: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:52:52 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:43: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:43: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:53:31 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/Memory.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:33: undefined reference to `vtable for Addr'
+./src/Memory.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:47: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.cpp:47: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:53:49 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `main':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/main.cc:17: undefined reference to `Memory::Memory()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/main.cc:17: undefined reference to `Memory::~Memory()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/main.cc:17: undefined reference to `Memory::~Memory()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:54:08 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:22: undefined reference to `vtable for Addr'
+./src/main.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:59: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:59: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:54:22 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:22: undefined reference to `vtable for Addr'
+./src/main.o: In function `Memory::Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:55: undefined reference to `vtable for Memory'
+./src/main.o: In function `main':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/main.cc:17: undefined reference to `Memory::~Memory()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/main.cc:17: undefined reference to `Memory::~Memory()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:54:36 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+./src/main.o: In function `Addr::Addr()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:22: undefined reference to `vtable for Addr'
+./src/main.o: In function `Memory::~Memory()':
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:48: undefined reference to `Addr::~Addr()'
+D:\Shared\USN_study\HW_SW_CO_Design\ABC\Group_2\Software\ABC_Controller\Debug/../src/Memory.h:48: undefined reference to `Addr::~Addr()'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+00:54:52 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55812	   1332	   3248	  60392	   ebe8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:55:26 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:16:27: error: initializer-string for array of chars is too long [-fpermissive]
+  char note[6] = {"CDEFGAB"};
+                           ^
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+00:55:42 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55812	   1332	   3248	  60392	   ebe8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:55:46 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55812	   1332	   3248	  60392	   ebe8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:55:57 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+00:56:17 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+00:57:04 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55904	   1332	   3252	  60488	   ec48	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+00:57:53 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+00:58:37 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+00:59:41 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:38:11: error: expected primary-expression before '%' token
+    printf(%c,Notes[i]);
+           ^
+../src/Memory.cpp:38:12: error: 'c' was not declared in this scope
+    printf(%c,Notes[i]);
+            ^
+../src/Memory.cpp:38:4: error: 'printf' was not declared in this scope
+    printf(%c,Notes[i]);
+    ^~~~~~
+../src/Memory.cpp:38:4: note: suggested alternative: 'print'
+    printf(%c,Notes[i]);
+    ^~~~~~
+    print
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:59:53 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:38:11: error: expected primary-expression before '%' token
+    printf(%c,Notes[i]);
+           ^
+../src/Memory.cpp:38:12: error: 'c' was not declared in this scope
+    printf(%c,Notes[i]);
+            ^
+../src/Memory.cpp:38:4: error: 'printf' was not declared in this scope
+    printf(%c,Notes[i]);
+    ^~~~~~
+../src/Memory.cpp:38:4: note: suggested alternative: 'print'
+    printf(%c,Notes[i]);
+    ^~~~~~
+    print
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+00:59:59 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:39:11: error: expected primary-expression before '%' token
+    printf(%c,Notes[i]);
+           ^
+../src/Memory.cpp:39:12: error: 'c' was not declared in this scope
+    printf(%c,Notes[i]);
+            ^
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+01:00:25 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55848	   1332	   3252	  60432	   ec10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:00:32 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:01:13 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55848	   1332	   3252	  60432	   ec10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:01:24 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55852	   1332	   3248	  60432	   ec10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:01:40 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55856	   1332	   3252	  60440	   ec18	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:01:44 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:04:23 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:05:13 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:07:23 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:07:56 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125412	   1460	   3264	 130136	  1fc58	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:08:03 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125392	   1460	   3268	 130120	  1fc48	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:08:11 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125392	   1460	   3268	 130120	  1fc48	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:08:29 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:09:26 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:09:46 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:10:25 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46760	   1332	   3252	  51344	   c890	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:10:27 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55832	   1332	   3252	  60416	   ec00	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:10:29 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:11:49 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Buzzer.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Buzzer.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Buzzer.d" -MT"src/Buzzer.o" -o "src/Buzzer.o" "../src/Buzzer.cpp"
+'Finished building: ../src/Buzzer.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55852	   1332	   3248	  60432	   ec10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:11:52 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:12:26 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:14:37 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:18:13 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:9:0:
+../src/Memory.h: In member function 'void Addr::Increment()':
+../src/Memory.h:32:3: error: expected ';' before 'if'
+   if(CurrentAddr >= EndAddr)
+   ^~
+../src/Memory.h:31:3: warning: statement has no effect [-Wunused-value]
+   CurrentAddr
+   ^~~~~~~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+01:18:40 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+In file included from ../src/Memory.cpp:9:0:
+../src/Memory.h: In member function 'void Addr::Increment()':
+../src/Memory.h:32:3: error: expected ';' before 'if'
+   if(CurrentAddr >= EndAddr-3)
+   ^~
+../src/Memory.h:31:3: warning: statement has no effect [-Wunused-value]
+   CurrentAddr
+   ^~~~~~~~~~~
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+01:18:53 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55852	   1332	   3248	  60432	   ec10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:19:02 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:21:38 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:40:11: error: too few arguments to function 'int printf(const char*, ...)'
+    printf();
+           ^
+In file included from c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:29:0,
+                 from ../src/Memory.cpp:8:
+c:\xilinx\sdk\2018.3\gnu\microblaze\nt\microblaze-xilinx-elf\include\stdio.h:181:5: note: declared here
+ int _EXFUN(printf, (const char *__restrict, ...)
+     ^
+make: *** [src/subdir.mk:46: src/Memory.o] Error 1
+01:22:08 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:40:34: warning: conversion lacks type at end of format [-Wformat=]
+    printf("%l",StopAddr.Address());
+                                  ^
+../src/Memory.cpp:40:34: warning: too many arguments for format [-Wformat-extra-args]
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126300	   1460	   3264	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:22:27 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:40:35: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+    printf("%ld",StopAddr.Address());
+                 ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126300	   1460	   3264	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:22:51 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'u8 Memory::ReadNextNote()':
+../src/Memory.cpp:19:34: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+   printf("%ld",StopAddr.Address());
+                ~~~~~~~~~~~~~~~~~~^
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:35: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+    printf("%ld",StopAddr.Address());
+                 ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 48 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+01:23:14 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125488	   1460	   3268	 130216	  1fca8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:23:29 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'u8 Memory::ReadNextNote()':
+../src/Memory.cpp:19:37: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+   printf("%ld /n",StopAddr.Address());
+                   ~~~~~~~~~~~~~~~~~~^
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:38: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+    printf("%ld /n",StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125492	   1460	   3264	 130216	  1fca8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:23:33 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:23:52 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:24:24 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'u8 Memory::ReadNextNote()':
+../src/Memory.cpp:19:37: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+   printf("%ld \n",StopAddr.Address());
+                   ~~~~~~~~~~~~~~~~~~^
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:38: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+    printf("%ld \n",StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 125492	   1460	   3264	 130216	  1fca8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:24:26 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 48 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+01:24:30 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+mb-size: ABC_Controller.elf: File format not recognized
+'Finished building: ABC_Controller.elf.size'
+' '
+01:25:20 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:25:35 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'u8 Memory::ReadNextNote()':
+../src/Memory.cpp:19:38: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+   printf("%ld \n", StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:39: warning: format '%ld' expects argument of type 'long int', but argument 2 has type 'UINTPTR {aka unsigned int}' [-Wformat=]
+    printf("%ld \n", StopAddr.Address());
+                     ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 48 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+01:26:05 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 48 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+01:26:57 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55844	   1332	   3248	  60424	   ec08	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:27:07 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126296	   1460	   3268	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:27:11 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 48 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+01:27:23 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126296	   1460	   3268	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:27:53 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+    printf("%d \n", StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: ABC_Controller.elf section `.stack' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+c:/xilinx/sdk/2018.3/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/7.3.1/../../../../microblaze-xilinx-elf/bin/ld.exe: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 56 bytes
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:50: ABC_Controller.elf] Error 1
+01:27:58 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126296	   1460	   3268	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:28:43 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126292	   1460	   3264	 131016	  1ffc8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:28:48 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:29:37 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126292	   1460	   3264	 131016	  1ffc8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:29:47 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:33:32 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+    printf("%d \n", StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126292	   1460	   3264	 131016	  1ffc8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:33:48 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:36:04 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:36:28 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126296	   1460	   3268	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:36:49 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:37:27 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:38:37 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:39:02 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:38: warning: format '%d' expects argument of type 'int', but argument 2 has type 'long int' [-Wformat=]
+    printf("%d \n", StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126300	   1460	   3264	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:39:38 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126300	   1460	   3264	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:39:44 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:40:39 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:41:03 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:42:23 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:44:02 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+../src/Memory.cpp: In member function 'void Memory::SaveNote(char*, int)':
+../src/Memory.cpp:41:38: warning: format '%s' expects argument of type 'char*', but argument 2 has type 'long int' [-Wformat=]
+    printf("%s \n", StopAddr.Address());
+                    ~~~~~~~~~~~~~~~~~~^
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 126300	   1460	   3264	 131024	  1ffd0	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:44:10 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:44:55 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/Memory.cpp'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Memory.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/Memory.d" -MT"src/Memory.o" -o "src/Memory.o" "../src/Memory.cpp"
+'Finished building: ../src/Memory.cpp'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  55848	   1332	   3252	  60432	   ec10	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:45:01 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:45:13 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46948	   1332	   3248	  51528	   c948	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:45:20 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:24:13: error: invalid conversion from 'char' to 'const char8* {aka const char*}' [-fpermissive]
+   print(Note);
+             ^
+In file included from ../src/main.cc:7:0:
+../../ABC_Controller_bsp/microblaze_0/include/xil_printf.h:40:6: note:   initializing argument 1 of 'void print(const char8*)'
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+01:45:28 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:24:15: error: invalid conversion from 'char' to 'const char8* {aka const char*}' [-fpermissive]
+   print({Note});
+               ^
+In file included from ../src/main.cc:7:0:
+../../ABC_Controller_bsp/microblaze_0/include/xil_printf.h:40:6: note:   initializing argument 1 of 'void print(const char8*)'
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+01:45:53 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:39: error: expected primary-expression before ']' token
+   char Note[1] = {BRAM.ReadNextNote()[];
+                                       ^
+../src/main.cc:23:40: error: expected '}' before ';' token
+   char Note[1] = {BRAM.ReadNextNote()[];
+                                        ^
+../src/main.cc:25:19: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+   LED.LightUp(Note);
+                   ^
+In file included from ../src/main.cc:8:0:
+../src/LEDs.h:19:7: note:   initializing argument 1 of 'void LEDs::LightUp(char)'
+  void LightUp(char Note);
+       ^~~~~~~
+../src/main.cc:26:16: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+   buz.Sing(Note);
+                ^
+In file included from ../src/main.cc:9:0:
+../src/Buzzer.h:27:7: note:   initializing argument 1 of 'void Buzzer::Sing(char)'
+  void Sing(char note);
+       ^~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+01:45:57 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:36: warning: narrowing conversion of 'BRAM.Memory::ReadNextNote()' from 'u8 {aka unsigned char}' to 'char' inside { } [-Wnarrowing]
+   char Note[1] = {BRAM.ReadNextNote()};
+                   ~~~~~~~~~~~~~~~~~^~
+../src/main.cc:25:19: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+   LED.LightUp(Note);
+                   ^
+In file included from ../src/main.cc:8:0:
+../src/LEDs.h:19:7: note:   initializing argument 1 of 'void LEDs::LightUp(char)'
+  void LightUp(char Note);
+       ^~~~~~~
+../src/main.cc:26:16: error: invalid conversion from 'char*' to 'char' [-fpermissive]
+   buz.Sing(Note);
+                ^
+In file included from ../src/main.cc:9:0:
+../src/Buzzer.h:27:7: note:   initializing argument 1 of 'void Buzzer::Sing(char)'
+  void Sing(char note);
+       ^~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+01:46:14 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:36: warning: narrowing conversion of 'BRAM.Memory::ReadNextNote()' from 'u8 {aka unsigned char}' to 'char' inside { } [-Wnarrowing]
+   char Note[1] = {BRAM.ReadNextNote()};
+                   ~~~~~~~~~~~~~~~~~^~
+../src/main.cc:24:18: error: invalid conversion from 'char' to 'const char8* {aka const char*}' [-fpermissive]
+   print({Note[1]});
+                  ^
+In file included from ../src/main.cc:7:0:
+../../ABC_Controller_bsp/microblaze_0/include/xil_printf.h:40:6: note:   initializing argument 1 of 'void print(const char8*)'
+ void print( const char8 *ptr);
+      ^~~~~
+make: *** [src/subdir.mk:60: src/main.o] Error 1
+01:46:19 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:36: warning: narrowing conversion of 'BRAM.Memory::ReadNextNote()' from 'u8 {aka unsigned char}' to 'char' inside { } [-Wnarrowing]
+   char Note[1] = {BRAM.ReadNextNote()};
+                   ~~~~~~~~~~~~~~~~~^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46952	   1332	   3252	  51536	   c950	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:46:26 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:48:00 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:48:23 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:36: warning: narrowing conversion of 'BRAM.Memory::ReadNextNote()' from 'u8 {aka unsigned char}' to 'char' inside { } [-Wnarrowing]
+   char Note[1] = {BRAM.ReadNextNote()};
+                   ~~~~~~~~~~~~~~~~~^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46952	   1332	   3252	  51536	   c950	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:48:26 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:48:56 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:49:29 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:50:33 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+01:51:02 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:23:36: warning: narrowing conversion of 'BRAM.Memory::ReadNextNote()' from 'u8 {aka unsigned char}' to 'char' inside { } [-Wnarrowing]
+   char Note[1] = {BRAM.ReadNextNote()};
+                   ~~~~~~~~~~~~~~~~~^~
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46788	   1332	   3248	  51368	   c8a8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:51:15 **** Auto Build of configuration Debug for project ABC_Controller ****
+make all 
+'Building file: ../src/main.cc'
+'Invoking: MicroBlaze g++ compiler'
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../ABC_Controller_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: ABC_Controller.elf'
+'Invoking: MicroBlaze g++ linker'
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../ABC_Controller_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ABC_Controller.elf"  ./src/Buzzer.o ./src/LEDs.o ./src/Memory.o ./src/PmodGPIO.o ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: ABC_Controller.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ABC_Controller.elf  |tee "ABC_Controller.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  46784	   1332	   3252	  51368	   c8a8	ABC_Controller.elf
+'Finished building: ABC_Controller.elf.size'
+' '
+01:52:24 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.

@@ -5,12 +5,10 @@
  *      Author: Bozhao Liu
  */
 
+#include <stdio.h>
 #include "Memory.h"
 #include "xil_io.h"
 
-Memory::Memory() {
-	// TODO Auto-generated constructor stub
-}
 
 u8 Memory::ReadNextNote()
 {
@@ -18,6 +16,7 @@ u8 Memory::ReadNextNote()
 	if(CurrentAddr != StopAddr)
 	{
 		note = Xil_In8(CurrentAddr.Address());
+		//printf("%ld \n", CurrentAddr.Address());
 		CurrentAddr.Increment();
 	}
 	return note;
@@ -34,16 +33,15 @@ void Memory::SaveNote(char Note)
 
 void Memory::SaveNote(char Notes[], int length)
 {
-	for(int i; i < length; i++)
+	for(int i = 0; i < length; i++)
 	{
 		if((Notes[i] < 72 && Notes[i] > 64) ||(Notes[i] < 104 && Notes[i] > 96) )
 		{
 			Xil_Out8(StopAddr.Address(), Notes[i]);
+			//printf("%s \n", StopAddr.Address());
 			StopAddr.Increment();
 		}
 	}
 }
-Memory::~Memory() {
-	// TODO Auto-generated destructor stub
-}
+
 

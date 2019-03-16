@@ -7,27 +7,22 @@
 #include "xil_printf.h"
 #include "LEDs.h"
 #include "Buzzer.h"
-#include "xuartlite.h"
+#include "Memory.h"
+//#include "xuartlite.h"
 
 int main()
 {
 	init_platform();
-	char note;
-	while(1)
+	char note[7] = {'C','D','E','F','G','A','B'};
+	Memory BRAM;
+	LEDs LED;
+	Buzzer buz;
+	BRAM.SaveNote(note,7);
+	for(int i = 0; i< 7; i++)
 	{
-		//if (XUartPs_IsReceiveData(STDIN_BASEADDRESS))
-		{
-		    char note = inbyte();
-
-			if ((note < 72 && note > 64)||(note < 104 && note > 96))
-			{
-				LEDs LED;
-				LED.LightUp(note);
-				print("hello");
-				Buzzer buz;
-				buz.Sing(note);
-			}
-		}
+		char Note = BRAM.ReadNextNote();
+		LED.LightUp(Note);
+		buz.Sing(Note);
 	}
 	cleanup_platform();
     return 0;
