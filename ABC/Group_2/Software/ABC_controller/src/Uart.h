@@ -17,7 +17,7 @@ private:
 	XUartLite FUart;
 public:
 	Uart();
-	int Sendbyte(u8 Note);
+	int Sendbyte(u8 *Note, int size);
 	int Readbyte(u8 *Note);
 	virtual ~Uart();
 };

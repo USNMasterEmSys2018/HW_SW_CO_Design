@@ -22,9 +22,9 @@ int Uart::Readbyte(u8 *Note)
 	return XUartLite_Recv(&FUart, Note, XPAR_BRAM_0_HIGHADDR -  XPAR_BRAM_0_BASEADDR + 1);
 }
 
-int Uart::Sendbyte(u8 Note)
+int Uart::Sendbyte(u8 *Note, int size)
 {
-
+	return XUartLite_Send(&FUart, Note, size);
 }
 
 Uart::~Uart() {

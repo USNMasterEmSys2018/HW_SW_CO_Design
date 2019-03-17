@@ -35,12 +35,7 @@ void Memory::SaveNote(char Notes[], int length)
 {
 	for(int i = 0; i < length; i++)
 	{
-		if((Notes[i] < 72 && Notes[i] > 64) ||(Notes[i] < 104 && Notes[i] > 96) )
-		{
-			Xil_Out8(StopAddr.Address(), Notes[i]);
-			//printf("%s \n", StopAddr.Address());
-			StopAddr.Increment();
-		}
+		SaveNote(Notes[i]);
 	}
 }
 
