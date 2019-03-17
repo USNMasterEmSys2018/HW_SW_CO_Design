@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;ABC_Controller/src/BUZ&apos; to &apos;BUZ.c&apos;" description="Rename resource &apos;BUZ&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/BUZ" name="BUZ.c" stamp="1552522481069" updateReferences="true"/>
+</session>

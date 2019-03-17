@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/constrs_1/imports/Cheating_dice/Basys3.xdc rfile:../../../Hardware.srcs/constrs_1/imports/Cheating_dice/Basys3.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W5 [get_ports clk]
+set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN B15 [get_ports {tx}]
+set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C15 [get_ports {rx}]

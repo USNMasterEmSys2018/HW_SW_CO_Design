@@ -1,0 +1,6 @@
+01:52:24 **** Incremental Build of configuration Debug for project ABC_Controller ****
+make all 
+make: Nothing to be done for 'all'.
+
+01:52:24 Build Finished (took 75ms)
+

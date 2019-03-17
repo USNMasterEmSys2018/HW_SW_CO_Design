@@ -1,0 +1,453 @@
+
+*** Running vivado
+    with args -log RX_TX_read_write_control.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RX_TX_read_write_control.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source RX_TX_read_write_control.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/Shared/USN_study/Private/VHDL/vivado-library-2018.2-1/vivado-library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top RX_TX_read_write_control -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18236 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 437.281 ; gain = 102.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'RX_TX_read_write_control' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/RX_TX_read_write_control.vhd:22]
+	Parameter Baud_width bound to: 1085 - type: integer 
+INFO: [Synth 8-3491] module 'Main_state_machine' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Main_state_machine.vhd:34' bound to instance 'main' of component 'Main_state_machine' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/RX_TX_read_write_control.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'Main_state_machine' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Main_state_machine.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Main_state_machine' (1#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Main_state_machine.vhd:43]
+	Parameter Baud_width bound to: 1085 - type: integer 
+INFO: [Synth 8-3491] module 'Read_data_state_machine' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Read_data_state_machine.vhd:34' bound to instance 'data_read_in' of component 'Read_data_state_machine' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/RX_TX_read_write_control.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'Read_data_state_machine' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Read_data_state_machine.vhd:44]
+	Parameter Baud_width bound to: 1085 - type: integer 
+WARNING: [Synth 8-614] signal 'Buff_data' is read in the process but is not in the sensitivity list [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Read_data_state_machine.vhd:119]
+INFO: [Synth 8-256] done synthesizing module 'Read_data_state_machine' (2#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Read_data_state_machine.vhd:44]
+INFO: [Synth 8-3491] module 'Memory_control' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Memory_control.vhd:34' bound to instance 'memory_controling' of component 'Memory_control' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/RX_TX_read_write_control.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'Memory_control' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Memory_control.vhd:44]
+INFO: [Synth 8-3491] module 'self_block_RAM_wrapper' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Self_block_ram_wrapper.vhd:5' bound to instance 'Data_handling' of component 'self_block_RAM_wrapper' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Memory_control.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'self_block_RAM_wrapper' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Self_block_ram_wrapper.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'self_block_RAM_wrapper' (3#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Self_block_ram_wrapper.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Memory_control' (4#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Memory_control.vhd:44]
+INFO: [Synth 8-3491] module 'send_data_state_machine' declared at 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Send_data_state_machine.vhd:6' bound to instance 'data_send_out' of component 'send_data_state_machine' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/RX_TX_read_write_control.vhd:105]
+INFO: [Synth 8-638] synthesizing module 'send_data_state_machine' [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Send_data_state_machine.vhd:16]
+WARNING: [Synth 8-614] signal 'data_to_send' is read in the process but is not in the sensitivity list [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Send_data_state_machine.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'send_data_state_machine' (5#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/Send_data_state_machine.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'RX_TX_read_write_control' (6#1) [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/sources_1/imports/Group_2/RX_TX_read_write_control.vhd:22]
+WARNING: [Synth 8-3331] design self_block_RAM_wrapper has unconnected port BRAM_PORTB_0_en
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 493.449 ; gain = 158.977
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 493.449 ; gain = 158.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 493.449 ; gain = 158.977
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/constrs_1/imports/Cheating_dice/Basys3.xdc]
+Finished Parsing XDC File [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/constrs_1/imports/Cheating_dice/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.srcs/constrs_1/imports/Cheating_dice/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/RX_TX_read_write_control_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/RX_TX_read_write_control_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.648 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.648 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 825.648 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 825.648 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 825.648 ; gain = 491.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 825.648 ; gain = 491.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 825.648 ; gain = 491.176
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Main_state_machine'
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Buff_send_ctrl" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Buff_read_ctrl" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Read_data_state_machine'
+INFO: [Synth 8-5546] ROM "LF_buff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "go_bit_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "go_Baud_counter" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "read_cmd_buff" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'send_data_state_machine'
+INFO: [Synth 8-5545] ROM "Baud_width" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "update_address" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "count_bit" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LF" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                              001 |                               00
+           reading_state |                              010 |                               01
+            output_state |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'Main_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                               00 |                               00
+             start_state |                               01 |                               01
+           reading_state |                               10 |                               10
+             pause_state |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Read_data_state_machine'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              idle_state |                             0001 |                               00
+           sending_state |                             0010 |                               10
+                lf_state |                             0100 |                               11
+        fetch_data_state |                             1000 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'send_data_state_machine'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 825.648 ; gain = 491.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     13 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               13 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                2 Bit    Registers := 7     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	              64K Bit         RAMs := 1     
++---Muxes : 
+	  15 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Main_state_machine 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module Read_data_state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 3     
+Module self_block_RAM_wrapper 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---RAMs : 
+	              64K Bit         RAMs := 1     
+Module Memory_control 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+Module send_data_state_machine 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  15 Input     27 Bit        Muxes := 1     
+	   2 Input     27 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "data_read_in/LF_buff" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "data_send_out/Baud_width" is below threshold of ROM address width. It will be mapped to LUTs
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 825.648 ; gain = 491.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|self_block_RAM_wrapper: | Ram_reg    | 8 K x 8(NO_CHANGE)     | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_0/memory_controling/Data_handling/Ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_0/memory_controling/Data_handling/Ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 825.648 ; gain = 491.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 847.156 ; gain = 512.684
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name             | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|self_block_RAM_wrapper: | Ram_reg    | 8 K x 8(NO_CHANGE)     | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++------------------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance memory_controling/Data_handling/Ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance memory_controling/Data_handling/Ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    64|
+|3     |LUT1     |    19|
+|4     |LUT2     |   110|
+|5     |LUT3     |    19|
+|6     |LUT4     |    38|
+|7     |LUT5     |     4|
+|8     |LUT6     |    47|
+|9     |RAMB36E1 |     2|
+|10    |FDRE     |   190|
+|11    |IBUF     |     2|
+|12    |OBUF     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------+------------------------+------+
+|      |Instance            |Module                  |Cells |
++------+--------------------+------------------------+------+
+|1     |top                 |                        |   497|
+|2     |  data_read_in      |Read_data_state_machine |   185|
+|3     |  data_send_out     |send_data_state_machine |   201|
+|4     |  main              |Main_state_machine      |    18|
+|5     |  memory_controling |Memory_control          |    89|
+|6     |    Data_handling   |self_block_RAM_wrapper  |    50|
++------+--------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 850.297 ; gain = 183.625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 850.297 ; gain = 515.824
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 66 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 850.297 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 850.297 ; gain = 528.711
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 850.297 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Shared/USN_study/HW_SW_CO_Design/ABC/Group_2/Hardware/Hardware.runs/synth_1/RX_TX_read_write_control.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RX_TX_read_write_control_utilization_synth.rpt -pb RX_TX_read_write_control_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Mar 16 23:29:31 2019...
